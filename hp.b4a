@@ -1,0 +1,2434 @@
+﻿Build1=Default,com.stanks.hp_zgb,Full
+File1=auto.png
+File10=h_meni2.png
+File11=h2.png
+File12=hp.db
+File13=hp.png
+File14=hp_plavi.png
+File15=info.bal
+File16=kbc.gif
+File17=kbd.png
+File18=kbm.png
+File19=klaiceva.png
+File2=duzs.png
+File20=logo.png
+File21=main_map.bal
+File22=md.png
+File23=meni.png
+File24=menu.png
+File25=odabir.bal
+File26=odjel.png
+File27=pbsvi-logo.png
+File28=sd.jpg
+File29=slika.png
+File3=duzs2.png
+File30=sm.jpg
+File31=stare_opcine.png
+File32=teren.png
+File33=udaljenost.png
+File34=udaljenost2.png
+File35=upitnik.png
+File36=vrapce.jpg
+File37=vvlogosmall.jpg
+File38=www.png
+File4=dz.png
+File5=email.png
+File6=foun.png
+File7=grb_opcine.png
+File8=h.png
+File9=h_meni.png
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup25=Default Group
+FileGroup26=Default Group
+FileGroup27=Default Group
+FileGroup28=Default Group
+FileGroup29=Default Group
+FileGroup3=Default Group
+FileGroup30=Default Group
+FileGroup31=Default Group
+FileGroup32=Default Group
+FileGroup33=Default Group
+FileGroup34=Default Group
+FileGroup35=Default Group
+FileGroup36=Default Group
+FileGroup37=Default Group
+FileGroup38=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+IconFile=
+Library1=core
+Library10=googlemapsextras
+Library11=httputils2
+Library12=json
+Library13=floatingactionbutton
+Library14=preferenceactivity
+Library15=id
+Library16=msmaterialdialogs
+Library17=rsasyncdownloader
+Library18=startappinappb4awrapper-3.3.0
+Library2=sql
+Library3=reflection
+Library4=stringutils
+Library5=googlemaps
+Library6=phone
+Library7=gps
+Library8=richstring
+Library9=fusedlocationprovider
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'AddManifestText( <permission~\n~'  android:name="$PACKAGE$.permission.MAPS_RECEIVE"~\n~'  android:protectionLevel="signature"/>~\n~'  <uses-feature android:glEsVersion="0x00020000" android:required="true"/>)~\n~~\n~'AddApplicationText(<meta-data~\n~'  android:name="com.google.android.maps.v2.API_KEY"~\n~'  android:value="AIzaSyBojY8kPw8W6QiLwGrUeFRhCaTfMSYnq1A"/>~\n~'   <meta-data android:name="com.google.android.gms.version"~\n~'   android:value="@integer/google_play_services_version" />~\n~')~\n~AddApplicationText(~\n~<meta-data~\n~  android:name="com.google.android.geo.API_KEY"~\n~  android:value="AIzaSyCCq0Sa8x2Gt1csEVopRQ2xxmjioqaPtgo "/>~\n~)~\n~'	required manifest entry required for Google Play Services~\n~AddApplicationText(<meta-data~\n~	android:name="com.google.android.gms.version"~\n~	android:value="@integer/google_play_services_version" />)~\n~~\n~AddPermission(android.permission.ACCESS_FINE_LOCATION)~\n~AddPermission(android.permission.ACCESS_COARSE_LOCATION)~\n~AddPermission(android.permission.INTERNET)~\n~AddPermission(android.permission.ACCESS_WIFI_STATE)~\n~AddPermission(android.permission.ACCESS_NETWORK_STATE)~\n~'AddApplicationText(<activity android:name="anywheresoftware.b4a.objects.preferenceactivity"/>)~\n~'End of default text.~\n~AddApplicationText(~\n~<activity android:name="com.startapp.android.publish.list3d.List3DActivity"~\n~          android:theme="@android:style/Theme" />~\n~~\n~<activity android:name="com.startapp.android.publish.OverlayActivity"~\n~          android:theme="@android:style/Theme.Translucent"~\n~          android:configChanges="orientation|keyboardHidden|screenSize" />~\n~~\n~<activity android:name="com.startapp.android.publish.FullScreenActivity"~\n~          android:theme="@android:style/Theme"~\n~          android:configChanges="orientation|keyboardHidden|screenSize" /> )
+Module1=Starter
+Module2=DBUtils
+NumberOfFiles=38
+NumberOfLibraries=18
+NumberOfModules=2
+Version=8.5
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: Hitan prijem - Zagreb
+	#VersionCode: 6
+	#VersionName: 1.4
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+'	#AdditionalRes: C:\android-sdks\extras\google\google_play_services\libproject\google-play-services_lib\res, com.google.android.gms
+'	#AdditionalRes: C:\android-sdk\extras\google\google-play-services\libproject\google-play-services_lib\res, com.google.android.gms
+'	#ExcludeClasses: .games, .drive, .fitness, .wearable, .measurement, .cast, .auth, .nearby
+'	#ExcludeClasses: .tagmanager, .analytics, .wallet, .plus, .vision, .gcm
+	#AdditionalRes: C:\Users\dstanko\Documents\b4a-primjeri\MSMaterialDialogsSample\res1\res
+	#AdditionalRes: C:\Users\dstanko\Documents\b4a-primjeri\MSMaterialDialogsSample\res2\res
+	#AdditionalJar: com.google.android.gms:play-services-maps
+	#AdditionalJar: com.google.android.gms:play-services-location
+	#AdditionalJar: com.android.support:appcompat-v7
+'	#AdditionalJar: android-support-v4.jar
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: False
+#End Region
+
+#AdditionalRes: ..\Resource
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Private FusedLocationProvider1 As FusedLocationProvider
+	Private LastLocation As Location
+'	Dim manager As PreferenceManager
+'	Dim screen As PreferenceScreen
+'	Dim MapCenter As GeoPoint
+'	Dim SourceImageRect, TouchImageViewRect As Rect
+	Dim bol As String
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+   	Private gmap As GoogleMap
+   	Private MapFragment1 As MapFragment
+	Dim gme As GoogleMapsExtras
+'	Dim ImageButtonsView1 As ImageButtonsView
+	Dim listaOpcina As List
+	Dim listaTerena As List
+	Dim listaDZ As List
+	Dim listaMD As List
+'
+'	Private ScrollView1 As ScrollView
+'	Private Panel1 As Panel
+'	Private ImageView1 As ImageView
+'	Dim cvPrikaz As CustomListView
+'	Dim cvPrikaz1 As CustomListView	' odjeli
+'	Dim cvPrikaz2 As CustomListView
+'	Dim cvPrikaz4 As CustomListView
+'	Dim cvPrikaz5 As CustomListView
+'	Private Panel1 As Panel	' odjeli
+'	Private Panel2 As Panel	' općine
+'	Private Panel3 As Panel	' tereni
+'	Private Panel4 As Panel	' mirovni domovi
+'	Private Panel5 As Panel	' dz
+'	Private Panel6 As Panel	' hp
+	' dodaj gumbe
+'	Dim Height, Left, Orientation, Top, Width As Int
+'	Dim Top As Int
+'	Dim btnMeni As Button
+'	Dim AnimPlus As AnimationPlus
+'	Private btnOpcine As Button
+'	Private Label1 As Label
+'	Dim otvoren, otvoren2, otvoren3, otvoren4, otvoren5 As Boolean = False
+'	Dim visinaPanela As Int = 0
+'	Dim lblCetvrt As Label
+	Dim mVasaPoz As Marker
+'	Dim mBolnice As Marker
+	Dim mBolnice(50) As Marker
+	Dim markeri As Map
+	Dim zum As Double = 10
+'	Private bolAutoTextSizeLabel1 As AutoTextSizeLabel
+'   Dim Projection1 As Projection
+'   Dim VisibleRegion1 As VisibleRegion
+'
+'	Dim ContainerPanel As Panel
+	Dim InfoWindowPanel As Panel
+'	Dim SnippetLabel As Label
+'	Dim ThumbImage As ImageView
+'	Dim TitleLabel As Label
+'	Dim MapPanel As Panel
+	Private pnlBolnicaInfo As Panel
+	Private lblBolnica As Label
+'	Private lblBolnicaInfo As Label
+	Private imgBolnicaLogo As ImageView
+	Private lblOdjeli As Label
+'	Private lblUdaljenost As Label
+	Dim opcina As String
+	Dim odjel As String
+'	Dim bolnica As String
+'	Dim lbl1 As Label
+'	Dim BD As BetterDialogs
+	Private pnlOdabir As Panel
+'	Private btnTeren As Button
+'	Private btnUdaljenost As Button
+	Dim latOdabranaBolnica As Double
+	Dim lonOdabranaBolnica As Double
+	Type MapsPointItem (dLatitude As Double, dLongitude As Double, iPassed As Int)
+	Dim tocke As List
+	'
+'	Dim pnlAB As Panel
+'	Dim AB, AB2 As ClsActionBar
+'	Dim HSV As HorizontalScrollView
+'	Dim opcNazivCetvrti As String
+	Dim plList As List
+'	Dim MapView1 As MapView
+'	Dim gumbOp, gumbOd, gumbBo As Boolean
+	Dim zadnjiMeniGumb As Int
+	Private fam As FloatingActionMenu
+	Private FABs As List
+'	Private fabOpcine As FloatingActionButton
+'	Private fabOdjeli As FloatingActionButton
+'	Private fabDZ As FloatingActionButton
+'	Private fabBolnice As FloatingActionButton
+'	Private fabHP As FloatingActionButton
+'	Private fabUdaljenost As FloatingActionButton
+	Private fabTeren As FloatingActionButton
+	Private lblGumbOpcina As Label
+	Dim indeksDZ As Int
+	Dim udaljenost1, udaljenost2 As String
+'
+'   Dim TouchImageView1 As TouchImageView
+'   Dim pnlTIV As Panel
+'	Dim bRuta As Boolean = False
+	Dim pl As Polyline
+'	Private lblNaslov As Label
+'	Dim BD As BetterDialogs
+	Dim InfoWindowAdapter1 As InfoWindowAdapter
+'	Dim m As Marker
+'	Dim ma As Marker
+	Private lblUdaljenost As Label
+	Private imgUdaljenost As ImageView
+	Dim panelVidljiv As Boolean
+	Private imgAuto As ImageView
+	Private Panel1 As Panel
+	Dim sdk As StartAppSDK
+	Dim startAppInterstitial As StartAppAd
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+	Activity.LoadLayout("main_map")
+
+	markeri.Initialize
+	plList.Initialize
+	FABs.Initialize
+
+	sdk.init("208603937", True)
+	startAppInterstitial.initialize
+	startAppInterstitial.loadAd
+
+	fabTeren.ShowProgressBackground = False
+	fabTeren.Left = 100%x - 50dip'54dip'304dip
+	fabTeren.Top = 5dip
+	fabTeren.ButtonSize = 1
+		
+	listaOpcina.Initialize2(Array As String("Centar", "Črnomerec", "Dubrava", "Maksimir", "Medveščak", "Novi Zagreb", _
+							 "Pešćenica 1 - zapadno od Ivanićgradske", "Pešćenica 2 - istočno od Ivanićgradske", _
+							 "Sesvete", "Susedgrad", "Trešnjevka", "Trnje", "Velika Gorica", "Zaprešić"))
+	listaTerena.Initialize2(Array As String("Standardna karta", "Fotografska sa ulicama", "Karta sa planinama, rijekama, ..."))
+	listaDZ.Initialize2(Array As String("Dom zdravlja Zagreb - Centar", "Dom zdravlja Zagreb - Istok", "Dom zdravlja Zagreb - Zapad"))
+	listaMD.Initialize2(Array As String("Centar", "Dubrava", "Ksaver", "Maksimir", "Medveščak", "Park", "Pešćenica", _
+						"Sveta Ana", "Sveti Josip", "Trešnjevka", "Trnje"))
+
+	If FirstTime Then
+		FusedLocationProvider1.Initialize("FusedLocationProvider1")
+	End If
+
+	If MapFragment1.IsGooglePlayServicesAvailable = False Then
+		ToastMessageShow("Molim da instalirate Google Play servis!", True)
+	End If
+
+	Activity.AddMenuItem("O programu", "OProgramu")
+
+	fam.ActivityHeight = 100%y
+	fam.ActivityWidth = 100%x
+	fam.Left = 5dip
+	fam.Top = 5dip
+	'
+	' I don´t know what the problem is, but the 
+	' first 2 Fabs added will be ignored 
+	' (they do not show in menu)
+	'
+	' 1
+	Dim btn1 As FloatingActionButton
+	btn1.Initialize("fab")
+	btn1.IconDrawable = "ic_accessibility"
+	btn1.Color = Colors.Blue
+	btn1.ColorDisabled = Colors.LightGray
+	btn1.ColorNormal = Colors.Green
+	btn1.ColorPressed = Colors.Magenta
+	btn1.ColorRipple = Colors.White
+	btn1.ButtonSize = 1
+	btn1.ShowShadow = True
+	btn1.showButtonInMenu(True)
+	btn1.LabelText = "ne radi 1"
+	fam.addMenuButton(btn1)
+
+	' 2
+	Dim btn1 As FloatingActionButton
+	btn1.Initialize("fab")
+	btn1.IconDrawable = "ic_accessibility"
+	btn1.Color = Colors.Blue
+	btn1.ColorDisabled = Colors.LightGray
+	btn1.ColorNormal = Colors.Green
+	btn1.ColorPressed = Colors.Magenta
+	btn1.ColorRipple = Colors.White
+	btn1.ButtonSize = 0
+	btn1.ShowShadow = True
+	btn1.showButtonInMenu(True)
+	btn1.LabelText = "ne radi 2"
+	fam.addMenuButton(btn1)
+
+	' From here the fab is added to the menu
+	Dim btn1 As FloatingActionButton
+	btn1.Initialize("fab")
+	btn1.Tag = 7
+	btn1.IconDrawable = "duzs"
+	btn1.ColorDisabled = Colors.RGB(159, 155, 230)'Colors.LightGray
+	btn1.ColorNormal = Colors.RGB(6, 173, 220)'Colors.Green
+	btn1.ColorPressed = Colors.RGB(9, 8, 86)'Colors.Magenta
+	btn1.ColorRipple = Colors.RGB(220, 220, 220)'Colors.White
+	btn1.ButtonSize = 1
+	btn1.ShowShadow = True
+	btn1.showButtonInMenu(True)
+	btn1.LabelVisibility = 1
+	btn1.LabelText = "Državna uprava za zaštitu i spašavanje"
+	fam.addMenuButton(btn1)
+	FABs.Add(btn1)
+
+	Dim btn1 As FloatingActionButton
+	btn1.Initialize("fab")
+	btn1.Tag = 6
+	btn1.IconDrawable = "md"
+	btn1.ColorDisabled = Colors.RGB(159, 155, 230)'Colors.LightGray
+	btn1.ColorNormal = Colors.RGB(6, 173, 220)'Colors.Green
+	btn1.ColorPressed = Colors.RGB(9, 8, 86)'Colors.Magenta
+	btn1.ColorRipple = Colors.RGB(220, 220, 220)'Colors.White
+	btn1.ButtonSize = 1
+	btn1.ShowShadow = True
+	btn1.showButtonInMenu(True)
+	btn1.LabelVisibility = 1
+	btn1.LabelText = "Mirovni domovi"
+	fam.addMenuButton(btn1)
+	FABs.Add(btn1)
+
+	Dim btn1 As FloatingActionButton
+	btn1.Initialize("fab")
+	btn1.Tag = 5
+	btn1.IconDrawable = "bol"
+	btn1.ColorDisabled = Colors.RGB(159, 155, 230)'Colors.LightGray
+	btn1.ColorNormal = Colors.RGB(6, 173, 220)'Colors.Green
+	btn1.ColorPressed = Colors.RGB(9, 8, 86)'Colors.Magenta
+	btn1.ColorRipple = Colors.RGB(220, 220, 220)'Colors.White
+	btn1.ButtonSize = 1
+	btn1.ShowShadow = True
+	btn1.showButtonInMenu(True)
+	btn1.LabelVisibility = 1
+	btn1.LabelText = "Bolnice"
+	fam.addMenuButton(btn1)
+	FABs.Add(btn1)
+
+	Dim btn1 As FloatingActionButton
+	btn1.Initialize("fab")
+	btn1.Tag = 4
+	btn1.IconDrawable = "hp_plavi"
+	btn1.ColorDisabled = Colors.RGB(159, 155, 230)'Colors.LightGray
+	btn1.ColorNormal = Colors.RGB(6, 173, 220)'Colors.Green
+	btn1.ColorPressed = Colors.RGB(9, 8, 86)'Colors.Magenta
+	btn1.ColorRipple = Colors.RGB(220, 220, 220)'Colors.White
+	btn1.ButtonSize = 1
+	btn1.ShowShadow = True
+	btn1.showButtonInMenu(True)
+	btn1.LabelVisibility = 1
+	btn1.LabelText = "Podstanice hitne pomoći"
+	fam.addMenuButton(btn1)
+	FABs.Add(btn1)
+
+	Dim btn1 As FloatingActionButton
+	btn1.Initialize("fab")
+	btn1.Tag = 3
+	btn1.IconDrawable = "dz"
+	btn1.ColorDisabled = Colors.RGB(159, 155, 230)'Colors.LightGray
+	btn1.ColorNormal = Colors.RGB(6, 173, 220)'Colors.Green
+	btn1.ColorPressed = Colors.RGB(9, 8, 86)'Colors.Magenta
+	btn1.ColorRipple = Colors.RGB(220, 220, 220)'Colors.White
+	btn1.ButtonSize = 1
+	btn1.ShowShadow = True
+	btn1.showButtonInMenu(True)
+	btn1.LabelVisibility = 1
+	btn1.LabelText = "Domovi zdravlja"
+	fam.addMenuButton(btn1)
+	FABs.Add(btn1)
+
+	Dim btn1 As FloatingActionButton
+	btn1.Initialize("fab")
+	btn1.Tag = 2
+	btn1.IconDrawable = "odjeli"
+	btn1.ColorDisabled = Colors.RGB(159, 155, 230)'Colors.LightGray
+	btn1.ColorNormal = Colors.RGB(6, 173, 220)'Colors.Green
+	btn1.ColorPressed = Colors.RGB(9, 8, 86)'Colors.Magenta
+	btn1.ColorRipple = Colors.RGB(220, 220, 220)'Colors.White
+	btn1.ButtonSize = 1
+	btn1.ShowShadow = True
+	btn1.showButtonInMenu(True)
+	btn1.LabelVisibility = 1
+	btn1.LabelText = "Odjeli"
+	fam.addMenuButton(btn1)
+	FABs.Add(btn1)
+
+	Dim btn1 As FloatingActionButton
+	btn1.Initialize("fab")
+	btn1.Tag = 1
+	btn1.IconDrawable = "zagreb"
+	btn1.ColorDisabled = Colors.RGB(159, 155, 230)'Colors.LightGray
+	btn1.ColorNormal = Colors.RGB(6, 173, 220)'Colors.Green
+	btn1.ColorPressed = Colors.RGB(9, 8, 86)'Colors.Magenta
+	btn1.ColorRipple = Colors.RGB(220, 220, 220)'Colors.White
+	btn1.ButtonSize = 1
+	btn1.ShowShadow = True
+	btn1.showButtonInMenu(True)
+	btn1.LabelVisibility = 1
+	btn1.LabelText = "Općine"
+	fam.addMenuButton(btn1)
+	FABs.Add(btn1)
+
+	fam.OpenDirection = 1	' 0 - gore, 1 - dole
+	fam.LabelsPosition = 1	' 0 - lijevo, 1 - desno
+
+	fam.Invalidate
+	
+	fam.showMenuButton(True)
+End Sub
+
+Sub OProgramu_Click
+	Msgbox("Prikaz hitnog prijema u gradu Zagrebu." & CRLF & "Podatke prikupio g. Mirko Drvar", "Hitan prijem v1.4")
+End Sub
+
+Sub MapFragment1_Ready
+   	gmap = MapFragment1.GetMap
+
+	Dim OnInfoWindowClickListener1 As OnInfoWindowClickListener
+	OnInfoWindowClickListener1.Initialize("OnInfoWindowClickListener1")
+
+	If OnInfoWindowClickListener1.IsInitialized Then
+		gme.SetOnInfoWindowClickListener(gmap, OnInfoWindowClickListener1)
+	Else
+		Log("OnInfoWindowClickListener1 is not initialized - check that the Activity contains a Click callback Sub")
+	End If
+
+	InfoWindowAdapter1.Initialize("InfoWindowAdapter1")
+	gme.SetInfoWindowAdapter(gmap, InfoWindowAdapter1)
+
+	InfoWindowPanel.Initialize("")
+	InfoWindowPanel.LoadLayout("info")
+	Panel1.Left = -(100%x - 6%x - imgUdaljenost.Width)
+	' a hack(ish) way to set InfoWindowPanel width and height!
+
+'	Activity.AddView(InfoWindowPanel, 0, 0, 240dip, 230dip)
+	Activity.AddView(InfoWindowPanel, 0, 0, 75%x, 40%y)
+	InfoWindowPanel.RemoveView
+End Sub
+
+Sub Activity_Resume
+	'	attempt to connect to the location services
+	'	after calling Connect we are waiting for either ConnectionFailed or ConnectionSuccess events
+	FusedLocationProvider1.Connect
+	startAppInterstitial.onResume
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+	FusedLocationProvider1.Disconnect
+	startAppInterstitial.onPause
+End Sub
+
+Sub OtvoriDUZS
+	Dim cursor1 As Cursor
+
+	If markeri.Size > 0 Then
+		For i = 0 To markeri.Size - 1
+			mBolnice(i).Remove
+		Next
+		markeri.Clear
+		Dim mBolnice(50) As Marker
+	End If
+
+	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+	LatLngBoundsBuilder1.Initialize
+
+	Dim MarkerOptions1 As MarkerOptions
+
+	cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName10)
+	For i = 0 To cursor1.RowCount - 1
+		cursor1.Position = i
+		Dim s As String = cursor1.GetString("koord")
+		Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+		Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+		MarkerOptions1.Initialize
+		MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("adresa")).Title(cursor1.GetString("naziv")).Visible(True)
+		Dim BitmapDescriptor1 As BitmapDescriptor
+		Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+		Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "duzs.png")', 32dip, 32dip)
+		BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+		MarkerOptions1.Icon(BitmapDescriptor1)
+		
+		mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+		LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+		markeri.Put(i, mBolnice(i))
+	Next
+
+	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+
+	fam.close(True)
+End Sub
+
+Sub OtvoriMirovneDomove
+	Dim cursor1 As Cursor
+
+	If markeri.Size > 0 Then
+		For i = 0 To markeri.Size - 1
+			mBolnice(i).Remove
+		Next
+		markeri.Clear
+		Dim mBolnice(50) As Marker
+	End If
+
+	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+	LatLngBoundsBuilder1.Initialize
+
+	Dim MarkerOptions1 As MarkerOptions
+
+	cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName9)
+	For i = 0 To cursor1.RowCount - 1
+		cursor1.Position = i
+		Dim s As String = cursor1.GetString("koord")
+		Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+		Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+		MarkerOptions1.Initialize
+		MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("adresa")).Title(cursor1.GetString("naziv_doma")).Visible(True)
+		Dim BitmapDescriptor1 As BitmapDescriptor
+		Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+		Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "md.png")', 32dip, 32dip)
+		BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+		MarkerOptions1.Icon(BitmapDescriptor1)
+		
+		mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+		LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+		markeri.Put(i, mBolnice(i))
+	Next
+
+	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+
+	fam.close(True)
+End Sub
+
+Sub OtvoriDZ2
+	Dim builder As MSDialogBuilder
+
+	builder.Initialize("dzDlg")
+	builder.setTitle("Odaberite dom zdravlja").setThemeColor(Colors.Green)
+'	builder.setButton(DialogResponse.POSITIVE , "OK")
+	builder.setCancelable(True)
+	builder.setDesign(builder.DESIGN_HOLO_DARK)
+	builder.setListStyle(listaDZ)
+	builder.show
+End Sub
+
+'Return path for List dialogs
+Sub dzDlg_ItemAccepted(SelectedItem As String)
+	Log(SelectedItem)
+	PrikaziZaDZNaKarti(SelectedItem)
+End Sub
+
+'Return path for Alert Dialogs
+Sub dzDlg_DialogResponse(Buttonclicked As Int) As Boolean 
+	Log(Buttonclicked)
+	Return True
+End Sub
+
+Sub PrikaziZaDZNaKarti(dz As String)
+	Dim cursor1 As Cursor
+'	Dim s As String
+'	s = lbl.Text
+
+	lblGumbOpcina.Text = dz
+	SetLabelTextSize(lblGumbOpcina, lblGumbOpcina.Text, 38, 8)
+
+	If markeri.Size > 0 Then
+		For i = 0 To markeri.Size - 1'mBolnice.Length - 1'markeri.Size - 1
+			mBolnice(i).Remove
+		Next
+		markeri.Clear
+		Dim mBolnice(50) As Marker
+	End If
+
+	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+	LatLngBoundsBuilder1.Initialize
+
+	Dim MarkerOptions1 As MarkerOptions
+
+	Select dz
+		' centar
+		Case "Dom zdravlja Zagreb - Centar"
+			indeksDZ = 0
+			cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName5)
+			For i = 0 To cursor1.RowCount - 1
+				cursor1.Position = i
+				Dim s As String = cursor1.GetString("koord")
+				Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+				Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+				MarkerOptions1.Initialize
+    			MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("adresa")).Title("DZ Zagreb - Centar").Visible(True)
+				Dim BitmapDescriptor1 As BitmapDescriptor
+    			Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+				Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "dz.png")', 32dip, 32dip)
+				BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+				MarkerOptions1.Icon(BitmapDescriptor1)
+		
+				mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+				LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+				markeri.Put(i, mBolnice(i))
+			Next
+
+		'istok
+		Case "Dom zdravlja Zagreb - Istok"
+			indeksDZ = 1
+			cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName6)
+			For i = 0 To cursor1.RowCount - 1
+				cursor1.Position = i
+				Dim s As String = cursor1.GetString("koord")
+				Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+				Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+				MarkerOptions1.Initialize
+    			MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("adresa")).Title("DZ Zagreb - Istok").Visible(True)
+				Dim BitmapDescriptor1 As BitmapDescriptor
+    			Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+				Dim bmp As Bitmap = LoadBitmapSample(File.DirAssets, "dz.png", 32dip, 32dip)
+				BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+				MarkerOptions1.Icon(BitmapDescriptor1)
+		
+				mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+				LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+				markeri.Put(i, mBolnice(i))
+			Next
+
+		'zapad
+		Case "Dom zdravlja Zagreb - Zapad"
+			indeksDZ = 2
+			cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName7)
+			For i = 0 To cursor1.RowCount - 1
+				cursor1.Position = i
+				Dim s As String = cursor1.GetString("koord")
+				Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+				Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+				MarkerOptions1.Initialize
+    			MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("adresa")).Title("DZ Zagreb - Zapad").Visible(True)
+				Dim BitmapDescriptor1 As BitmapDescriptor
+    			Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+				Dim bmp As Bitmap = LoadBitmapSample(File.DirAssets, "dz.png", 32dip, 32dip)
+				BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+				MarkerOptions1.Icon(BitmapDescriptor1)
+		
+				mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+				LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+				markeri.Put(i, mBolnice(i))
+			Next
+	End Select
+
+	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+
+'	Panel5.Visible = False
+'	Panel5.RemoveAllViews
+'	Panel5.RemoveView
+'	otvoren5 = False
+
+	fam.close(True)
+End Sub
+'Sub OtvoriDZ
+'	Dim x As Int = Activity.Height / 2
+'	x = -x
+'	AnimPlus.InitializeTranslate("AnimPlus", 0, x, 0, 0)
+'	AnimPlus.SetInterpolator(AnimPlus.INTERPOLATOR_LINEAR)
+'	AnimPlus.Duration = 100
+'	AnimPlus.PersistAfter = False
+'
+'	Panel5.Initialize("")
+'	Activity.AddView(Panel5, 0, Top + 2dip, 100%x, 100%y - Top - 2dip)
+'
+'	If AnimPlus.IsInitialized Then
+'		cvPrikaz5.Initialize(Me, "cvPrikaz5")
+'		Panel5.AddView(cvPrikaz5.AsView, 0, 0, Panel5.Width, Panel5.Height)
+'		For i = 0 To listaDZ.Size - 1
+'			cvPrikaz5.Add(CreateListItem(listaDZ.Get(i), cvPrikaz5.AsView.Width, 30dip), 30dip, "")
+'		Next
+'
+'		Panel5.Height = 98dip
+'		AnimPlus.Stop(Panel5)
+'		Activity.Invalidate
+'		AnimPlus.Start(Panel5)
+'	End If
+'End Sub
+
+Sub OtvoriHP
+	Dim cursor1 As Cursor
+
+	If markeri.Size > 0 Then
+		For i = 0 To markeri.Size - 1
+			mBolnice(i).Remove
+		Next
+		markeri.Clear
+		Dim mBolnice(50) As Marker
+	End If
+
+	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+	LatLngBoundsBuilder1.Initialize
+
+	Dim MarkerOptions1 As MarkerOptions
+
+	cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName8)
+	For i = 0 To cursor1.RowCount - 1
+		cursor1.Position = i
+		Dim s As String = cursor1.GetString("Koord")
+		Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+		Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+		MarkerOptions1.Initialize
+		MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("Adresa")).Title(cursor1.GetString("NazivBolnice")).Visible(True)
+		Dim BitmapDescriptor1 As BitmapDescriptor
+		Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+		Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "hp_plavi.png")', 32dip, 32dip)
+		BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+		MarkerOptions1.Icon(BitmapDescriptor1)
+		
+		mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+		LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+		markeri.Put(i, mBolnice(i))
+	Next
+
+	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+
+	fam.close(True)
+End Sub
+
+Sub OtvoriOpcine2
+	Dim builder As MSDialogBuilder
+
+	builder.Initialize("opcDlg")
+	builder.setTitle("Odaberite općinu").setThemeColor(Colors.Green)
+'	builder.setButton(DialogResponse.POSITIVE , "OK")
+	builder.setCancelable(True)
+	builder.setDesign(builder.DESIGN_HOLO_DARK)
+	builder.setListStyle(listaOpcina)
+	builder.show
+End Sub
+
+'Return path for List dialogs
+Sub opcDlg_ItemAccepted(SelectedItem As String)
+	Log(SelectedItem)
+	PrikaziZaOpcinuNaKarti(SelectedItem)
+End Sub
+
+'Return path for Alert Dialogs
+Sub opcDlg_DialogResponse(Buttonclicked As Int) As Boolean 
+	Log(Buttonclicked)
+	Return True
+End Sub
+
+Sub PrikaziZaOpcinuNaKarti(opc As String)
+	opcina = opc
+	lblGumbOpcina.Text = opcina
+	SetLabelTextSize(lblGumbOpcina, lblGumbOpcina.Text, 38, 8)
+
+	Dim cursor1 As Cursor
+	Dim bolnice As List
+	bolnice.Initialize
+	bolnice.Clear
+
+	Log(markeri.Size)
+	Log(mBolnice.Length)
+	If markeri.Size > 0 Then
+		For i = 0 To markeri.Size - 1'mBolnice.Length - 1
+			mBolnice(i).Remove
+		Next
+		markeri.Clear
+		Dim mBolnice(50) As Marker
+	End If
+
+	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+	LatLngBoundsBuilder1.Initialize
+
+	Dim MarkerOptions1 As MarkerOptions
+	Log(MarkerOptions1.IsInitialized)
+
+	' micanje CRLF za NZHMGZ
+	cursor1 = Starter.upit.ExecQuery("SELECT od.NazivOdjela as 'Odjel', b.NazivBolnice as 'Bolnica', b.Koord as 'Koord', b.Slika FROM " & Starter.DBTableName2 & " od, " & Starter.DBTableName3 & " b, " & Starter.DBTableName4 & " tag, " & Starter.DBTableName1 & " cet WHERE cet.ID=tag.ID_Cetvrt AND od.ID=tag.ID_Odjel AND b.id=tag.ID_Bolnica AND cet.NazivCetvrti = '" & opc & "'")
+	For i = 0 To cursor1.RowCount - 1
+		cursor1.Position = i
+		Dim s As String = cursor1.GetString("Koord")
+		Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+		Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+		MarkerOptions1.Initialize
+		MarkerOptions1.Position2(s1, s2).Title(cursor1.GetString("Bolnica")).Visible(True)
+		Dim BitmapDescriptor1 As BitmapDescriptor
+   		Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+		Dim bmp As Bitmap = LoadBitmapSample(File.DirAssets, "h.png", 32dip, 32dip)
+		BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+		MarkerOptions1.Icon(BitmapDescriptor1)
+		
+		mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+		LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+		markeri.Put(i, mBolnice(i))
+	Next
+
+	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+
+'	Panel2.Visible = False
+'	Panel2.RemoveAllViews
+'	Panel2.RemoveView
+'	otvoren = False
+
+	fam.close(True)
+End Sub
+'Sub OtvoriOpcine2
+'	Dim l As List
+'
+'	l.Initialize
+'	l.AddAll(listaOpcina)
+'	Dim x As id
+'	Dim m As String = x.InputList1(l, "Odaberite općinu u kojoj živite")
+'	Log("rb: " & m)
+'End Sub
+
+'Sub CreateStateListDrawable As StateListDrawable
+'	'Creates a SLD for the buttons of the custom dialog
+'	Dim sd As StateListDrawable
+'	sd.Initialize
+'	Dim gd1 As GradientDrawable
+'	gd1.Initialize("TOP_BOTTOM", Array As Int(Colors.Blue, Colors.Black))
+'	gd1.CornerRadius = 10dip
+'	sd.AddState(sd.State_Pressed, gd1)
+'	Dim gd2 As GradientDrawable
+'	gd2.Initialize("TOP_BOTTOM", Array As Int(Colors.RGB(45, 207, 211), Colors.Black))
+'	gd2.CornerRadius = 10dip
+'	sd.AddCatchAllState(gd2)
+'
+'	Return sd
+'End Sub
+
+'Sub OtvoriOpcine2
+'	Dim DR As Int
+'	Dim dlgParams As BD_CustomDlgParams
+'
+'	Dim pnlBody As Panel
+'	pnlBody.Initialize("")
+''	pnlBody.LoadLayout("radio_batoni")
+'	Dim vrh As Int = 0
+'	For i = 0 To 13
+'		Dim b As RadioButton
+'		b.Initialize("")
+'		b.Tag = i
+'		b.Text = listaOpcina.Get(i)
+'		pnlBody.AddView(b, 0, vrh, 100%x, 30dip)
+'		vrh = vrh + 30dip
+'	Next
+'
+'	dlgParams.Initialize
+'	dlgParams.Title = "Odaberite općinu u kojoj živite"
+'	dlgParams.TitleHeight = 40dip
+'	dlgParams.Background = Colors.RGB(50, 0, 50)
+'	dlgParams.DialogGravity = Gravity.CENTER_HORIZONTAL + Gravity.CENTER_VERTICAL'Gravity.RIGHT + Gravity.BOTTOM
+'	dlgParams.DialogBody = pnlBody
+'	dlgParams.BodyWidth = 100%x - 40dip
+'	Log(vrh)
+'	dlgParams.BodyHeight = 100%y - vrh'40dip
+'
+'	DR = BD.CustomDialog(dlgParams, "CD2")
+'	Log("DR=" & DR)
+'End Sub
+'
+'Sub RadioButton_CheckedChange(Checked As Boolean)
+'	'Closes the custom list when a radio button is clicked
+'	Dim RB As RadioButton = Sender
+'	Log("You clicked on " & RB.Text)
+'	BD.CloseDialog(DialogResponse.POSITIVE)
+'End Sub
+'
+'Sub CD2_BackKeyPressed As Boolean
+'	Log("Back key detected")
+''	Return True 'Prevents the cancellation of the dialog
+'	Return False
+'End Sub
+
+'Sub OtvoriOpcine
+'	Dim x As Int = Activity.Height / 2
+'	x = -x
+'	AnimPlus.InitializeTranslate("AnimPlus", 0, x, 0, 0)
+'	AnimPlus.SetInterpolator(AnimPlus.INTERPOLATOR_LINEAR)
+'	AnimPlus.Duration = 100
+'	AnimPlus.PersistAfter = False
+'
+'	Panel2.Initialize("")
+'	Activity.AddView(Panel2, 0, Top + 2dip, 100%x, 100%y - Top - 2dip)
+'
+'	If AnimPlus.IsInitialized Then
+'		cvPrikaz.Initialize(Me, "cvPrikaz")
+'		Panel2.AddView(cvPrikaz.AsView, 0, 0, Panel2.Width, Panel2.Height)
+'		For i = 0 To listaOpcina.Size - 1
+'			cvPrikaz.Add(CreateListItem(listaOpcina.Get(i), cvPrikaz.AsView.Width, 30dip), 30dip, "")
+'		Next
+'
+'		Panel2.Height = 482dip
+'		AnimPlus.Stop(Panel2)
+'		Activity.Invalidate
+'		AnimPlus.Start(Panel2)
+'	End If
+'End Sub
+
+'Sub CreateListItem(Text As String, w As Int, h As Int) As Panel
+'	Dim p As Panel
+'
+'	p.Initialize("")
+'	p.Color = Colors.White
+'
+'	Dim lbl As Label
+'	lbl.Initialize("")
+'	lbl.Gravity = Bit.Or(Gravity.CENTER_VERTICAL, Gravity.CENTER_HORIZONTAL)
+'	lbl.Text = Text
+'	lbl.TextSize = 14
+'	lbl.TextColor = Colors.Black
+'	lbl.Typeface = Typeface.DEFAULT_BOLD
+'
+'	p.AddView(lbl, 0, 0, 100%x, h) 'view #1
+'
+'	SetLabelTextSize(lbl, lbl.Text, 28, 8)
+'
+'	Return p
+'End Sub
+
+Sub SetLabelTextSize(lbl As Label, txt As String, MaxFontSize As Float, MinFontSize As Float)
+    Dim FontSize = MaxFontSize As Float
+    Dim Height As Int
+    Dim stu As StringUtils
+
+    lbl.TextSize = FontSize
+    Height = stu.MeasureMultilineTextHeight(lbl, txt)
+    Do While Height > lbl.Height And FontSize > MinFontSize 
+        FontSize = FontSize - 1
+        lbl.TextSize = FontSize
+        Height = stu.MeasureMultilineTextHeight(lbl, txt)
+    Loop
+End Sub
+
+Sub DodajVrsteTerena2
+	Dim builder As MSDialogBuilder
+
+	builder.Initialize("terenDlg")
+	builder.setTitle("Odaberite vrstu terena").setThemeColor(Colors.Green)
+'	builder.setButton(DialogResponse.POSITIVE , "OK")
+	builder.setCancelable(True)
+	builder.setDesign(builder.DESIGN_HOLO_DARK)
+	builder.setListStyle(listaTerena)
+	builder.show
+End Sub
+
+'Return path for List dialogs
+Sub terenDlg_ItemAccepted(SelectedItem As String)
+	Log(SelectedItem)
+	PrikaziTeren(SelectedItem)
+End Sub
+
+'Return path for Alert Dialogs
+Sub terenDlg_DialogResponse(Buttonclicked As Int) As Boolean 
+	Log(Buttonclicked)
+	Return True
+End Sub
+
+Sub PrikaziTeren(trn As String)
+	Select trn
+		Case "Standardna karta"
+			gmap.MapType = gmap.MAP_TYPE_NORMAL
+		Case "Fotografska sa ulicama"
+			gmap.MapType = gmap.MAP_TYPE_HYBRID
+		Case "Karta sa planinama, rijekama, ..."
+			gmap.MapType = gmap.MAP_TYPE_TERRAIN
+	End Select
+End Sub
+
+'Sub DodajVrsteTerena
+'	Dim x As Int = Activity.Height / 2
+'	x = -x
+'	AnimPlus.InitializeTranslate("AnimPlus", 0, x, 0, 0)
+'	AnimPlus.SetInterpolator(AnimPlus.INTERPOLATOR_LINEAR)
+'	AnimPlus.Duration = 100
+'	AnimPlus.PersistAfter = False
+'
+'	Panel3.Initialize("")
+''	Panel3.Color = Colors.LightGray
+'	Activity.AddView(Panel3, 0, Top + 2dip, 100%x, 100%y - Top - 2dip)
+'
+'	If AnimPlus.IsInitialized Then
+'		cvPrikaz2.Initialize(Me, "cvPrikaz2")
+'		Panel3.AddView(cvPrikaz2.AsView, 0, 0, Panel3.Width, Panel3.Height)
+'		For i = 0 To listaTerena.Size - 1
+'			cvPrikaz2.Add(CreateListItem2(listaTerena.Get(i), cvPrikaz2.AsView.Width, 30dip), 30dip, "")
+'		Next
+'
+'		Panel3.Height = 98dip
+'		AnimPlus.Stop(Panel3)
+'		Activity.Invalidate
+'		AnimPlus.Start(Panel3)
+'	End If
+'End Sub
+
+'Sub CreateListItem2(Text As String, w As Int, h As Int) As Panel
+'	Dim p As Panel
+'
+'	p.Initialize("")
+'	p.Color = Colors.White
+'
+'	Dim lbl As Label
+'	lbl.Initialize("")
+'	lbl.Gravity = Bit.Or(Gravity.CENTER_VERTICAL, Gravity.CENTER_HORIZONTAL)
+'	lbl.Text = Text
+'	lbl.TextSize = 14
+'	lbl.TextColor = Colors.Black
+'	lbl.Typeface = Typeface.DEFAULT_BOLD
+'
+'	p.AddView(lbl, 0, 0, 100%x, h) 'view #1
+'
+'	SetLabelTextSize(lbl, lbl.Text, 28, 8)
+'
+'	Return p
+'End Sub
+
+'Sub cvPrikaz2_ItemClick(Index As Int, Value As Object)
+'	Log(Index)
+'
+'	Select Index
+'		Case 0
+'			gmap.MapType = gmap.MAP_TYPE_NORMAL
+'		Case 1
+'			gmap.MapType = gmap.MAP_TYPE_HYBRID
+'		Case 2
+'			gmap.MapType = gmap.MAP_TYPE_TERRAIN
+'	End Select
+'
+'	Panel3.Visible = False
+'	Panel3.RemoveAllViews
+'	Panel3.RemoveView
+'	otvoren2 = False
+'End Sub
+
+'Sub cvPrikaz5_ItemClick(Index As Int, Value As Object)
+'	Dim cursor1 As Cursor
+'	Log(Index)
+'
+'	Dim pnl As Panel
+'	pnl = cvPrikaz5.GetPanel(Index)
+'	
+'	Dim lbl As Label
+'	lbl = pnl.GetView(0)
+'
+'	Dim s As String
+'	s = lbl.Text
+'
+'	lblGumbOpcina.Text = s
+'	SetLabelTextSize(lblGumbOpcina, lblGumbOpcina.Text, 38, 8)
+'
+'	If markeri.Size > 0 Then
+'		For i = 0 To markeri.Size - 1'mBolnice.Length - 1'markeri.Size - 1
+'			mBolnice(i).Remove
+'		Next
+'		markeri.Clear
+'		Dim mBolnice(50) As Marker
+'	End If
+'
+'	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+'	LatLngBoundsBuilder1.Initialize
+'
+'	Dim MarkerOptions1 As MarkerOptions
+'
+'	Select Index
+'		' centar
+'		Case 0
+'			indeksDZ = 0
+'			cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName5)
+'			For i = 0 To cursor1.RowCount - 1
+'				cursor1.Position = i
+'				Dim s As String = cursor1.GetString("koord")
+'				Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+'				Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+'				MarkerOptions1.Initialize
+'    			MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("adresa")).Title("DZ Zagreb - Centar").Visible(True)
+'				Dim BitmapDescriptor1 As BitmapDescriptor
+'    			Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+'				Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "dz.png")', 32dip, 32dip)
+'				BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+'				MarkerOptions1.Icon(BitmapDescriptor1)
+'		
+'				mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+'				LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+'				markeri.Put(i, mBolnice(i))
+'			Next
+'
+'		'istok
+'		Case 1
+'			indeksDZ = 1
+'			cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName6)
+'			For i = 0 To cursor1.RowCount - 1
+'				cursor1.Position = i
+'				Dim s As String = cursor1.GetString("koord")
+'				Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+'				Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+'				MarkerOptions1.Initialize
+'    			MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("adresa")).Title("DZ Zagreb - Istok").Visible(True)
+'				Dim BitmapDescriptor1 As BitmapDescriptor
+'    			Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+'				Dim bmp As Bitmap = LoadBitmapSample(File.DirAssets, "dz.png", 32dip, 32dip)
+'				BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+'				MarkerOptions1.Icon(BitmapDescriptor1)
+'		
+'				mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+'				LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+'				markeri.Put(i, mBolnice(i))
+'			Next
+'
+'		'zapad
+'		Case 2
+'			indeksDZ = 2
+'			cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName7)
+'			For i = 0 To cursor1.RowCount - 1
+'				cursor1.Position = i
+'				Dim s As String = cursor1.GetString("koord")
+'				Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+'				Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+'				MarkerOptions1.Initialize
+'    			MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("adresa")).Title("DZ Zagreb - Zapad").Visible(True)
+'				Dim BitmapDescriptor1 As BitmapDescriptor
+'    			Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+'				Dim bmp As Bitmap = LoadBitmapSample(File.DirAssets, "dz.png", 32dip, 32dip)
+'				BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+'				MarkerOptions1.Icon(BitmapDescriptor1)
+'		
+'				mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+'				LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+'				markeri.Put(i, mBolnice(i))
+'			Next
+'	End Select
+'
+'	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+'	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+'
+'	Panel5.Visible = False
+'	Panel5.RemoveAllViews
+'	Panel5.RemoveView
+'	otvoren5 = False
+'
+'	fam.close(True)
+'End Sub
+
+Sub PosaljiUpit
+	Dim job As HttpJob
+
+	job.Initialize("voznja", Me)
+	Log("https://maps.googleapis.com/maps/api/directions/json?origin=" & LastLocation.Latitude & "," & LastLocation.Longitude & "&destination=" & latOdabranaBolnica & "," & lonOdabranaBolnica & "&sensor=false&language=hr&key=AIzaSyCCq0Sa8x2Gt1csEVopRQ2xxmjioqaPtgo")
+	job.Download("https://maps.googleapis.com/maps/api/directions/json?origin=" & LastLocation.Latitude & "," & LastLocation.Longitude & "&destination=" & latOdabranaBolnica & "," & lonOdabranaBolnica & "&sensor=false&language=hr&key=AIzaSyCCq0Sa8x2Gt1csEVopRQ2xxmjioqaPtgo")
+End Sub
+
+Sub JobDone (Job As HttpJob)
+	Log("JobName = " & Job.JobName & ", Success = " & Job.Success)
+	If Job.Success = True Then
+		Select Job.JobName
+			Case "voznja"
+				traceRoute(Job.GetString)
+		End Select
+	Else
+		Log("Error: " & Job.ErrorMessage)
+		ToastMessageShow("Error: " & Job.ErrorMessage, True)
+	End If
+	Job.Release
+End Sub
+
+Sub traceRoute(JSON As String)
+	Dim parser As JSONParser
+	parser.Initialize(JSON)
+
+	tocke.Initialize
+
+	Dim root As Map = parser.NextObject
+	Dim routes As List = root.Get("routes")
+	For Each colroutes As Map In routes
+		Dim summary As String = colroutes.Get("summary")
+		Dim copyrights As String = colroutes.Get("copyrights")
+		Dim legs As List = colroutes.Get("legs")
+		For Each collegs As Map In legs
+			Dim duration As Map = collegs.Get("duration")
+'			duration = collegs.Get("duration")
+			Log(duration)
+			Dim text1 As String = duration.Get("text")
+			udaljenost1 = duration.Get("text")
+			Dim value As Int = duration.Get("value")
+			Dim start_location As Map = collegs.Get("start_location")
+			Dim lng As Double = start_location.Get("lng")
+			Dim lat As Double = start_location.Get("lat")
+			Dim distance As Map = collegs.Get("distance")
+			Log(distance)
+			Dim text2 As String = distance.Get("text")
+			udaljenost2 = distance.Get("text")
+			Dim value As Int = distance.Get("value")
+			Dim start_address As String = collegs.Get("start_address")
+			Dim end_location As Map = collegs.Get("end_location")
+			Dim lng As Double = end_location.Get("lng")
+			Dim lat As Double = end_location.Get("lat")
+			Dim end_address As String = collegs.Get("end_address")
+			Dim via_waypoint As List = collegs.Get("via_waypoint")
+			Dim steps As List = collegs.Get("steps")
+			For Each colsteps As Map In steps
+				Dim duration As Map = colsteps.Get("duration")
+				Dim text As String = duration.Get("text")
+				Dim value As Int = duration.Get("value")
+				Dim start_location As Map = colsteps.Get("start_location")
+				Dim lng As Double = start_location.Get("lng")
+				Dim lat As Double = start_location.Get("lat")
+				Dim distance As Map = colsteps.Get("distance")
+				Dim text As String = distance.Get("text")
+				Dim value As Int = distance.Get("value")
+				Dim travel_mode As String = colsteps.Get("travel_mode")
+'				Log(travel_mode)
+				Dim html_instructions As String = colsteps.Get("html_instructions")
+				Dim end_location As Map = colsteps.Get("end_location")
+				Dim lng As Double = end_location.Get("lng")
+				Dim lat As Double = end_location.Get("lat")
+				Dim polyline As Map = colsteps.Get("polyline")
+				Dim points As String = polyline.Get("points")
+'				Log(polyline.Get("points"))
+				MapsDecodePolyline(points)
+			Next
+		Next
+		Dim warnings As List = colroutes.Get("warnings")
+		Dim bounds As Map = colroutes.Get("bounds")
+		Dim southwest As Map = bounds.Get("southwest")
+		Dim lng As Double = southwest.Get("lng")
+		Dim lat As Double = southwest.Get("lat")
+		Dim northeast As Map = bounds.Get("northeast")
+		Dim lng As Double = northeast.Get("lng")
+		Dim lat As Double = northeast.Get("lat")
+		Dim overview_polyline As Map = colroutes.Get("overview_polyline")
+		Dim points As String = overview_polyline.Get("points")
+		Dim waypoint_order As List = colroutes.Get("waypoint_order")
+	Next
+
+	Dim geocoded_waypoints As List = root.Get("geocoded_waypoints")
+	For Each colgeocoded_waypoints As Map In geocoded_waypoints
+		Dim types As List = colgeocoded_waypoints.Get("types")
+		For Each coltypes As String In types
+		Next
+		Dim geocoder_status As String = colgeocoded_waypoints.Get("geocoder_status")
+		Dim place_id As String = colgeocoded_waypoints.Get("place_id")
+	Next
+
+	Dim status As String = root.Get("status")
+
+'	lblUdaljenost.Text = udaljenost1 & " - " & udaljenost2
+
+	IscrtajRutu
+End Sub
+
+Sub IscrtajRutu
+	Dim i As Int
+	Dim llPoint As LatLng
+	Dim points As List
+	Dim mpiCurrent As MapsPointItem
+'	Dim pl As Polyline
+
+'	bMapsRoutingInProgress = True
+'	bMapsManeuverPassed = False
+'	bDoNotDisturb = True
+	points.Initialize
+
+	For i = 0 To tocke.Size - 1
+  		mpiCurrent = tocke.Get(i)
+  		llPoint.Initialize(mpiCurrent.dLatitude, mpiCurrent.dLongitude)
+  		points.Add(llPoint)
+	Next
+
+	IzbrisiRutu
+
+	pl.Geodesic = True
+	pl.points = points
+	pl.Color = Colors.RGB(103,193,255)'utilities.v4_Colors("holo_blue_light")
+End Sub
+
+Sub IzbrisiRutu
+	pl = gmap.AddPolyline
+	plList.Add(pl)
+	If plList.Size > 1 Then
+		pl = plList.Get(0)
+		pl.Remove
+		plList.RemoveAt(0)
+		pl = plList.Get(0)
+	End If
+End Sub
+
+Sub MapsDecodePolyline(encoded As String)', poly As List)
+'    Log("MapsDecodePolyline")
+   
+    Dim index As Int
+    Dim lat As Int
+    Dim lng As Int
+    Dim fLat As Float
+    Dim fLng As Float
+    Dim b As Int
+    Dim shift As Int
+    Dim result As Int
+    Dim dlat As Int
+    Dim dlng As Int
+'    Dim p As LatLng
+'    Dim i As Int
+'    Dim l As LatLng
+
+    index = 0 : lat = 0 : lng = 0
+    Do While index < encoded.Length
+        shift = 0 : result = 0
+        Do While True
+            b = Asc(encoded.SubString2(index, index + 1)) - 63 : index = index + 1
+            result = Bit.Or(result, Bit.ShiftLeft(Bit.And(b, 0x1f), shift))
+            shift = shift + 5
+            If b < 0x20 Then Exit
+        Loop
+       
+        If Bit.And(result, 1) = 1 Then
+            dlat = Bit.Not(Bit.ShiftRight(result, 1))
+        Else
+            dlat = Bit.ShiftRight(result, 1)
+        End If
+        lat = lat + dlat
+        shift = 0 : result = 0
+        Do While True
+            b = Asc(encoded.SubString2(index, index + 1)) - 63 : index = index + 1
+            result = Bit.Or(result, Bit.ShiftLeft(Bit.And(b, 0x1f), shift))
+            shift = shift + 5
+            If b < 0x20 Then Exit
+        Loop
+       
+        If Bit.And(result, 1) = 1 Then
+            dlng = Bit.Not(Bit.ShiftRight(result, 1))
+        Else
+            dlng = Bit.ShiftRight(result, 1)
+        End If
+        lng = lng + dlng
+        fLat = lat
+        fLng = lng
+       
+        Dim mpiCurrent As MapsPointItem
+        mpiCurrent.Initialize
+        mpiCurrent.iPassed = 0
+        mpiCurrent.dLatitude = fLat / 100000
+        mpiCurrent.dLongitude = fLng / 100000
+		tocke.Add(mpiCurrent)
+'		poly.add(mpiCurrent)
+    Loop
+End Sub
+
+Sub OtvoriBolnice
+	Dim cursor1 As Cursor
+
+	If markeri.Size > 0 Then
+		For i = 0 To markeri.Size - 1
+			mBolnice(i).Remove
+		Next
+		markeri.Clear
+		Dim mBolnice(50) As Marker
+	End If
+
+	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+	LatLngBoundsBuilder1.Initialize
+
+	Dim MarkerOptions1 As MarkerOptions
+
+	cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName3)
+	For i = 0 To cursor1.RowCount - 1
+		cursor1.Position = i
+		Dim s As String = cursor1.GetString("Koord")
+		Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+		Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+		MarkerOptions1.Initialize
+    	MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("Adresa") & CRLF & cursor1.GetString("tel") & CRLF & cursor1.GetString("email")).Title(cursor1.GetString("NazivBolnice")).Visible(True)
+		Dim BitmapDescriptor1 As BitmapDescriptor
+   		Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+		Dim bmp As Bitmap = LoadBitmapSample(File.DirAssets, "h.png", 32dip, 32dip)
+		BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+		MarkerOptions1.Icon(BitmapDescriptor1)
+		
+		mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+		LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+		markeri.Put(i, mBolnice(i))
+	Next
+
+	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+
+	fam.close(True)
+End Sub
+
+Sub OtvoriOdjele2
+	Dim builder As MSDialogBuilder
+	Dim odjeli As List
+	Dim cursor1 As Cursor
+
+	odjeli.Initialize
+	cursor1 = Starter.upit.ExecQuery("SELECT ID, NazivOdjela FROM " & Starter.DBTableName2)
+	For i = 0 To cursor1.RowCount - 1
+		cursor1.Position = i
+'		Log(cursor1.GetString("NazivOdjela"))
+		If cursor1.GetInt("ID") > 0 Then odjeli.Add(cursor1.GetString("NazivOdjela"))
+'		If cursor1.GetString("NazivOdjela").Length > 0 Then odjeli.Add(cursor1.GetString("NazivOdjela"))
+	Next
+
+	builder.Initialize("odjDlg")
+	builder.setTitle("Odaberite odjel").setThemeColor(Colors.Green)
+'	builder.setButton(DialogResponse.POSITIVE , "OK")
+	builder.setCancelable(True)
+	builder.setDesign(builder.DESIGN_HOLO_DARK)
+	builder.setListStyle(odjeli)
+	builder.show
+End Sub
+
+'Return path for List dialogs
+Sub odjDlg_ItemAccepted(SelectedItem As String)
+	Log(SelectedItem)
+	PrikaziZaOdjeleNaKarti(SelectedItem)
+End Sub
+
+'Return path for Alert Dialogs
+Sub odjDlg_DialogResponse(Buttonclicked As Int) As Boolean 
+	Log(Buttonclicked)
+	Return True
+End Sub
+
+Sub PrikaziZaOdjeleNaKarti(odj As String)
+'	Dim s As String
+'	s = lbl.Text
+	odjel = odj
+	lblGumbOpcina.Text = odjel
+	SetLabelTextSize(lblGumbOpcina, lblGumbOpcina.Text, 38, 8)
+
+	Dim cursor1 As Cursor
+	Dim bolnice As List
+	bolnice.Initialize
+	bolnice.Clear
+
+	' prikaži gumb za prikaz udaljenosti na karti
+'	btnUdaljenost.Enabled = True
+
+	If markeri.Size > 0 Then
+		For i = 0 To markeri.Size - 1'mBolnice.Length - 1'markeri.Size - 1
+			mBolnice(i).Remove
+		Next
+		markeri.Clear
+		Dim mBolnice(50) As Marker
+	End If
+
+	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+	LatLngBoundsBuilder1.Initialize
+
+	Dim MarkerOptions1 As MarkerOptions
+
+	cursor1 = Starter.upit.ExecQuery("SELECT cet.NazivCetvrti, od.NazivOdjela as 'Odjel', b.NazivBolnice as 'Bolnica', b.Koord as 'Koord', b.Slika FROM " & Starter.DBTableName2 & " od, " & Starter.DBTableName3 & " b, " & Starter.DBTableName4 & " tag, " & Starter.DBTableName1 & " cet WHERE cet.ID=tag.ID_Cetvrt AND od.ID=tag.ID_Odjel AND b.id=tag.ID_Bolnica AND od.NazivOdjela = '" & odj & "'")
+	For i = 0 To cursor1.RowCount - 1
+		cursor1.Position = i
+		Dim s As String = cursor1.GetString("Koord")
+		Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+		Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+		MarkerOptions1.Initialize
+    	MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("NazivCetvrti")).Title(cursor1.GetString("Bolnica")).Visible(True)
+		Dim BitmapDescriptor1 As BitmapDescriptor
+   		Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+		Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "h.png")
+		BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+		MarkerOptions1.Icon(BitmapDescriptor1)
+		
+		mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+		LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+		markeri.Put(i, mBolnice(i))
+	Next
+
+	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+
+'	Panel1.Visible = False
+'	Panel1.RemoveAllViews
+'	Panel1.RemoveView
+'	otvoren3 = False	
+
+	fam.close(True)
+End Sub
+'Sub OtvoriOdjele
+'	Dim cursor1 As Cursor
+'	Dim odjeli As List
+'
+'	odjeli.Initialize
+'	cursor1 = Starter.upit.ExecQuery("SELECT ID, NazivOdjela FROM " & Starter.DBTableName2)
+'	For i = 0 To cursor1.RowCount - 1
+'		cursor1.Position = i
+''		Log(cursor1.GetString("NazivOdjela"))
+'		If cursor1.GetInt("ID") > 0 Then odjeli.Add(cursor1.GetString("NazivOdjela"))
+''		If cursor1.GetString("NazivOdjela").Length > 0 Then odjeli.Add(cursor1.GetString("NazivOdjela"))
+'	Next
+'
+'	Dim x As Int = Activity.Height / 2
+'	x = -x
+'	AnimPlus.InitializeTranslate("AnimPlus", 0, x, 0, 0)
+'	AnimPlus.SetInterpolator(AnimPlus.INTERPOLATOR_LINEAR)
+'	AnimPlus.Duration = 100
+'	AnimPlus.PersistAfter = False
+'
+'	Panel1.Initialize("")
+'	Activity.AddView(Panel1, 0, Top + 2dip, 100%x, 100%y - Top - 2dip)
+'
+'	If AnimPlus.IsInitialized Then
+'		cvPrikaz1.Initialize(Me, "cvPrikaz1")
+'		Panel1.AddView(cvPrikaz1.AsView, 0, 0, Panel1.Width, Panel1.Height)
+'		For i = 0 To odjeli.Size - 1
+'			' ista Sub CreateListItem za odjele kao i za općine
+'			cvPrikaz1.Add(CreateListItem(odjeli.Get(i), cvPrikaz1.AsView.Width, 30dip), 30dip, "")
+'		Next
+'
+'		Panel1.Height = 418dip
+'		AnimPlus.Stop(Panel1)
+'		Activity.Invalidate
+'		AnimPlus.Start(Panel1)
+'	End If
+'End Sub
+
+'Sub cvPrikaz1_ItemClick(Index As Int, Value As Object)
+'	Dim pnl As Panel
+'	pnl = cvPrikaz1.GetPanel(Index)
+'	
+'	Dim lbl As Label
+'	lbl = pnl.GetView(0)
+'
+'	Dim s As String
+'	s = lbl.Text
+'	odjel = s
+'	lblGumbOpcina.Text = odjel
+'	SetLabelTextSize(lblGumbOpcina, lblGumbOpcina.Text, 38, 8)
+'
+'	Dim cursor1 As Cursor
+'	Dim bolnice As List
+'	bolnice.Initialize
+'	bolnice.Clear
+'
+'	' prikaži gumb za prikaz udaljenosti na karti
+''	btnUdaljenost.Enabled = True
+'
+'	If markeri.Size > 0 Then
+'		For i = 0 To markeri.Size - 1'mBolnice.Length - 1'markeri.Size - 1
+'			mBolnice(i).Remove
+'		Next
+'		markeri.Clear
+'		Dim mBolnice(50) As Marker
+'	End If
+'
+'	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+'	LatLngBoundsBuilder1.Initialize
+'
+'	Dim MarkerOptions1 As MarkerOptions
+'
+'	cursor1 = Starter.upit.ExecQuery("SELECT cet.NazivCetvrti, od.NazivOdjela as 'Odjel', b.NazivBolnice as 'Bolnica', b.Koord as 'Koord', b.Slika FROM " & Starter.DBTableName2 & " od, " & Starter.DBTableName3 & " b, " & Starter.DBTableName4 & " tag, " & Starter.DBTableName1 & " cet WHERE cet.ID=tag.ID_Cetvrt AND od.ID=tag.ID_Odjel AND b.id=tag.ID_Bolnica AND od.NazivOdjela = '" & s & "'")
+'	For i = 0 To cursor1.RowCount - 1
+'		cursor1.Position = i
+'		Dim s As String = cursor1.GetString("Koord")
+'		Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+'		Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+'		MarkerOptions1.Initialize
+'    	MarkerOptions1.Position2(s1, s2).Snippet(cursor1.GetString("NazivCetvrti")).Title(cursor1.GetString("Bolnica")).Visible(True)
+'		Dim BitmapDescriptor1 As BitmapDescriptor
+'   		Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+'		Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "h.png")
+'		BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+'		MarkerOptions1.Icon(BitmapDescriptor1)
+'		
+'		mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+'		LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+'		markeri.Put(i, mBolnice(i))
+'	Next
+'
+'	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+'	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+'
+'	Panel1.Visible = False
+'	Panel1.RemoveAllViews
+'	Panel1.RemoveView
+'	otvoren3 = False	
+'
+'	fam.close(True)
+'End Sub
+'
+'Sub cvPrikaz_ItemClick(Index As Int, Value As Object)
+'	Dim pnl As Panel
+'	pnl = cvPrikaz.GetPanel(Index)
+'	
+'	Dim lbl As Label
+'	lbl = pnl.GetView(0)
+'
+'	Dim s As String
+'	s = lbl.Text
+'	opcina = s
+'	lblGumbOpcina.Text = opcina
+'	SetLabelTextSize(lblGumbOpcina, lblGumbOpcina.Text, 38, 8)
+'
+'	Dim cursor1 As Cursor
+'	Dim bolnice As List
+'	bolnice.Initialize
+'	bolnice.Clear
+'
+'	Log(markeri.Size)
+'	Log(mBolnice.Length)
+'	If markeri.Size > 0 Then
+'		For i = 0 To markeri.Size - 1'mBolnice.Length - 1
+'			mBolnice(i).Remove
+'		Next
+'		markeri.Clear
+'		Dim mBolnice(50) As Marker
+'	End If
+'
+'	Dim LatLngBoundsBuilder1 As LatLngBoundsBuilder
+'	LatLngBoundsBuilder1.Initialize
+'
+'	Dim MarkerOptions1 As MarkerOptions
+'	Log(MarkerOptions1.IsInitialized)
+'
+'	' micanje CRLF za NZHMGZ
+'	cursor1 = Starter.upit.ExecQuery("SELECT od.NazivOdjela as 'Odjel', b.NazivBolnice as 'Bolnica', b.Koord as 'Koord', b.Slika FROM " & Starter.DBTableName2 & " od, " & Starter.DBTableName3 & " b, " & Starter.DBTableName4 & " tag, " & Starter.DBTableName1 & " cet WHERE cet.ID=tag.ID_Cetvrt AND od.ID=tag.ID_Odjel AND b.id=tag.ID_Bolnica AND cet.NazivCetvrti = '" & s & "'")
+'	For i = 0 To cursor1.RowCount - 1
+'		cursor1.Position = i
+'		Dim s As String = cursor1.GetString("Koord")
+'		Dim s1 As String = s.SubString2(0, s.IndexOf(","))
+'		Dim s2 As String = s.SubString2(s.IndexOf(",")+1, s.Length)
+'		MarkerOptions1.Initialize
+'		MarkerOptions1.Position2(s1, s2).Title(cursor1.GetString("Bolnica")).Visible(True)
+'		Dim BitmapDescriptor1 As BitmapDescriptor
+'   		Dim BitmapDescriptorFactory1 As BitmapDescriptorFactory
+'		Dim bmp As Bitmap = LoadBitmapSample(File.DirAssets, "h.png", 32dip, 32dip)
+'		BitmapDescriptor1=BitmapDescriptorFactory1.FromBitmap(bmp)
+'		MarkerOptions1.Icon(BitmapDescriptor1)
+'		
+'		mBolnice(i) = gme.AddMarker(gmap, MarkerOptions1)
+'		LatLngBoundsBuilder1.Include(mBolnice(i).Position)
+'		markeri.Put(i, mBolnice(i))
+'	Next
+'
+'	Dim MarkerBounds As LatLngBounds=LatLngBoundsBuilder1.Build
+'	gme.AnimateToBounds(gmap, MarkerBounds, 128)
+'
+'	Panel2.Visible = False
+'	Panel2.RemoveAllViews
+'	Panel2.RemoveView
+'	otvoren = False
+'
+'	fam.close(True)
+'End Sub
+
+'Sub InfoWindowAdapter1_getInfoWindow(Marker1 As Marker) As View
+'	Log(Marker1)
+'	If Marker1.IsInitialized Then
+'		If ma.IsInitialized Then
+'			Dim s1 As String = ma.Title
+'		Else
+'			s1 = ""
+'		End If
+'		Dim s2 As String = Marker1.Title
+'		If s1.EqualsIgnoreCase(s2) Then
+'			lblUdaljenost.Text = udaljenost1 & " - " & udaljenost2
+'			ma = Marker1
+'			InfoWindowPanel.Invalidate
+'			Log(InfoWindowPanel.Width)
+'		Else
+'			lblUdaljenost.Text = ""
+'			Return Null
+'		End If
+'	Else
+'		Return Null
+'	End If
+'End Sub
+
+Sub InfoWindowAdapter1_GetInfoContents(Marker1 As Marker) As View
+   	'   Return Null
+   	'   the default InfoContent will be used if this event Sub is not defined or if it returns Null
+	If Marker1.Title.Contains("Vaša lokacija") = False Then
+	   	Log("InfoWindowAdapter1_GetInfoContents")
+
+		Dim cursor1 As Cursor
+  		latOdabranaBolnica = Marker1.Position.Latitude
+  		lonOdabranaBolnica = Marker1.Position.Longitude
+
+		' općine -> ispiši ime bolnice sa odjelima
+		If zadnjiMeniGumb = 1 Then
+	   		lblBolnica.Text = Marker1.Title
+			SetLabelTextSize(lblBolnica, lblBolnica.Text, 28, 6)
+			Log("zadnjiMeniGumb: " & zadnjiMeniGumb)
+			bol = Marker1.Title
+			Dim odjeli As String
+			Log("SELECT od.NazivOdjela FROM " & Starter.DBTableName2 & " od, " & Starter.DBTableName3 & " b, " & Starter.DBTableName4 & " tag, " & Starter.DBTableName1 & " cet WHERE cet.ID=tag.ID_Cetvrt AND od.ID=tag.ID_Odjel AND b.id=tag.ID_Bolnica AND cet.NazivCetvrti = '" & opcina & "' AND b.NazivBolnice = '" & Marker1.Title & "'")
+			cursor1 = Starter.upit.ExecQuery("SELECT od.NazivOdjela FROM " & Starter.DBTableName2 & " od, " & Starter.DBTableName3 & " b, " & Starter.DBTableName4 & " tag, " & Starter.DBTableName1 & " cet WHERE cet.ID=tag.ID_Cetvrt AND od.ID=tag.ID_Odjel AND b.id=tag.ID_Bolnica AND cet.NazivCetvrti = '" & opcina & "' AND b.NazivBolnice = '" & Marker1.Title & "'")
+			For i = 0 To cursor1.RowCount - 1
+				cursor1.Position = i
+				odjeli = odjeli & cursor1.GetString("NazivOdjela") & ";"
+			Next
+		   	lblOdjeli.Text = odjeli.Replace(";", CRLF)
+			SetLabelTextSize(lblOdjeli, lblOdjeli.Text, 12, 6)
+
+		' odjeli -> ispiši sve općine u kojima su bolnice sa izabranim odjelom
+		else if zadnjiMeniGumb = 2 Then
+			Log("zadnjiMeniGumb: " & zadnjiMeniGumb)
+	   		lblBolnica.Text = Marker1.Title' & " - " & odjel
+			SetLabelTextSize(lblBolnica, lblBolnica.Text, 28, 6)
+			Dim cetvrti As String
+			cursor1 = Starter.upit.ExecQuery("SELECT cet.NazivCetvrti, od.NazivOdjela, b.NazivBolnice FROM " & Starter.DBTableName2 & " od, " & Starter.DBTableName3 & " b, " & Starter.DBTableName4 & " tag, " & Starter.DBTableName1 & " cet WHERE cet.ID=tag.ID_Cetvrt AND od.ID=tag.ID_Odjel AND b.id=tag.ID_Bolnica AND od.NazivOdjela = '" & odjel & "' AND b.NazivBolnice = '" & Marker1.Title & "'")
+			For i = 0 To cursor1.RowCount - 1
+				cursor1.Position = i
+				cetvrti = cetvrti & cursor1.GetString("NazivCetvrti") & ";"
+			Next
+		   	lblOdjeli.Text = cetvrti.Replace(";", CRLF)
+			SetLabelTextSize(lblOdjeli, lblOdjeli.Text, 12, 8)
+
+		' bolnice
+		else if zadnjiMeniGumb = 3 Then
+			Log("zadnjiMeniGumb: " & zadnjiMeniGumb)
+			lblBolnica.Text = Marker1.Title
+			SetLabelTextSize(lblBolnica, lblBolnica.Text, 28, 6)
+'			Log(Marker1.Title)
+			Dim odBolnice As String
+			cursor1 = Starter.upit.ExecQuery("SELECT DISTINCT od.NazivOdjela, b.NazivBolnice FROM " & Starter.DBTableName2 & " od, " & Starter.DBTableName3 & " b, " & Starter.DBTableName4 & " tag WHERE od.ID=tag.ID_Odjel AND b.id=tag.ID_Bolnica AND b.NazivBolnice = '" & Marker1.Title & "'")
+			For i = 0 To cursor1.RowCount - 1
+				cursor1.Position = i
+				odBolnice = odBolnice & cursor1.GetString("NazivOdjela") & ";"
+			Next
+			Log(odBolnice.Length)
+			If odBolnice.Length > 0 Then
+				lblOdjeli.Text = odBolnice.Replace(";", CRLF)
+			Else
+				lblOdjeli.Text = "Nema podataka!"
+			End If
+			SetLabelTextSize(lblOdjeli, lblOdjeli.Text, 12, 8)
+
+		' dz
+		else if zadnjiMeniGumb = 4 Then
+'			Log(indeksDZ)
+			Select indeksDZ
+				Case 0	' centar
+					lblBolnica.Text = Marker1.Title
+					SetLabelTextSize(lblBolnica, lblBolnica.Text, 20, 6)
+					Dim dz As String
+					cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName5 & " WHERE adresa = '" & Marker1.Snippet & "'")
+					For i = 0 To cursor1.RowCount - 1
+						cursor1.Position = i
+						dz = cursor1.GetString("adresa")
+					Next
+					lblOdjeli.Text = dz.Replace(";", CRLF)
+					SetLabelTextSize(lblOdjeli, lblOdjeli.Text, 12, 8)
+
+				Case 1	' istok
+					lblBolnica.Text = Marker1.Title
+					SetLabelTextSize(lblBolnica, lblBolnica.Text, 20, 6)
+					Dim dz As String
+					cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName6 & " WHERE adresa = '" & Marker1.Snippet & "'")
+					For i = 0 To cursor1.RowCount - 1
+						cursor1.Position = i
+						dz = cursor1.GetString("adresa")
+					Next
+					lblOdjeli.Text = dz.Replace(";", CRLF)
+					SetLabelTextSize(lblOdjeli, lblOdjeli.Text, 12, 8)
+
+				Case 2	' zapad
+					lblBolnica.Text = Marker1.Title
+					SetLabelTextSize(lblBolnica, lblBolnica.Text, 20, 6)
+					Dim dz As String
+					cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName7 & " WHERE adresa = '" & Marker1.Snippet & "'")
+					For i = 0 To cursor1.RowCount - 1
+						cursor1.Position = i
+						dz = cursor1.GetString("adresa")
+					Next
+					lblOdjeli.Text = dz.Replace(";", CRLF)
+					SetLabelTextSize(lblOdjeli, lblOdjeli.Text, 12, 8)
+
+			End Select
+
+		' hitna pomoć - podstanice
+		else if zadnjiMeniGumb = 5 Then
+			Log("zadnjiMeniGumb: " & zadnjiMeniGumb)
+			lblBolnica.Text = Marker1.Title
+			SetLabelTextSize(lblBolnica, lblBolnica.Text, 20, 6)
+			Dim podstanice As String
+			cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName8 & " WHERE NazivBolnice = '" & Marker1.Title & "'")
+			For i = 0 To cursor1.RowCount - 1
+				cursor1.Position = i
+				podstanice = podstanice & cursor1.GetString("Adresa") & ";"
+			Next
+			Log(podstanice.Length)
+			If podstanice.Length > 0 Then
+				lblOdjeli.Text = podstanice.Replace(";", CRLF)
+			Else
+				lblOdjeli.Text = "Nema podataka!"
+			End If
+			SetLabelTextSize(lblOdjeli, lblOdjeli.Text, 12, 8)
+
+		' mirovni domovi
+		else if zadnjiMeniGumb = 6 Then
+			Log("zadnjiMeniGumb: " & zadnjiMeniGumb)
+			lblBolnica.Text = Marker1.Title
+			SetLabelTextSize(lblBolnica, lblBolnica.Text, 20, 6)
+			Dim domovi As String
+			cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName9 & " WHERE naziv_doma = '" & Marker1.Title & "'")
+			For i = 0 To cursor1.RowCount - 1
+				cursor1.Position = i
+				domovi = domovi & cursor1.GetString("adresa") & ";"
+			Next
+			Log(domovi.Length)
+			If domovi.Length > 0 Then
+				lblOdjeli.Text = domovi.Replace(";", CRLF)
+			Else
+				lblOdjeli.Text = "Nema podataka!"
+			End If
+			SetLabelTextSize(lblOdjeli, lblOdjeli.Text, 12, 8)
+
+		' državna uprava za zaštitu i spašavanje
+		else if zadnjiMeniGumb = 7 Then
+			Log("zadnjiMeniGumb: " & zadnjiMeniGumb)
+			lblBolnica.Text = Marker1.Title
+			SetLabelTextSize(lblBolnica, lblBolnica.Text, 20, 6)
+			Dim duzs112 As String
+			cursor1 = Starter.upit.ExecQuery("SELECT * FROM " & Starter.DBTableName10 & " WHERE naziv = '" & Marker1.Title & "'")
+			For i = 0 To cursor1.RowCount - 1
+				cursor1.Position = i
+				duzs112 = duzs112 & cursor1.GetString("adresa") & ";"
+			Next
+			Log(duzs112.Length)
+			If duzs112.Length > 0 Then
+				lblOdjeli.Text = duzs112.Replace(";", CRLF)
+			Else
+				lblOdjeli.Text = "Nema podataka!"
+			End If
+			SetLabelTextSize(lblOdjeli, lblOdjeli.Text, 12, 8)
+		End If
+
+		' imgBolnicaLogo -> 240dipx80dip
+		Dim r As Int
+		r = imgBolnicaLogo.Width / imgBolnicaLogo.Height
+		If imgBolnicaLogo.Width > imgBolnicaLogo.Height Then
+			imgBolnicaLogo.Width = 240dip
+			imgBolnicaLogo.Height = 80dip' / r'240dip / r
+		Else
+			imgBolnicaLogo.Width = 80dip * r
+			imgBolnicaLogo.Height = 80dip
+		End If
+
+   		Select Marker1.Title
+			Case "Klinički bolnički centar Zagreb - Rebro", "Klinika za ženske bolesti i porode - Petrova", "Klinički bolnički centar Zagreb - Šalata", _
+				 "Klinika za plućne bolesti Jordanovac"
+				Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "kbc.gif")
+				imgBolnicaLogo.Width = DipToCurrent(bmp.Width)
+				imgBolnicaLogo.Left = DipToCurrent((240 - bmp.Width) / 2)
+				imgBolnicaLogo.Top = DipToCurrent((80 - bmp.Height) / 2)
+				imgBolnicaLogo.Bitmap = bmp
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "Klinička bolnica Dubrava"
+				Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "kbd.png")
+				imgBolnicaLogo.Width = DipToCurrent(240)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Left = 0
+				imgBolnicaLogo.Bitmap = bmp
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "Psihijatrijska bolnica Vrapče"
+				Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "vrapce.jpg")
+				imgBolnicaLogo.Width = DipToCurrent(240)'(bmp.Width)
+				imgBolnicaLogo.Left = 0'DipToCurrent((240 - bmp.Width) / 2)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Bitmap = bmp
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "Klinika za dječje bolesti Zagreb - Klaićeva"
+				Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "klaiceva.png")
+				imgBolnicaLogo.Width = DipToCurrent(240)
+				imgBolnicaLogo.Left = 0'DipToCurrent((240 - bmp.Width) / 2)
+				imgBolnicaLogo.Top = DipToCurrent((80 - bmp.Height) / 2)
+				imgBolnicaLogo.Bitmap = bmp
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "Klinička bolnica Sestre Milosrdnice"
+				imgBolnicaLogo.Bitmap = LoadBitmap(File.DirAssets, "sm.jpg")
+				imgBolnicaLogo.Left = DipToCurrent((240 - 80) / 2)
+				imgBolnicaLogo.Width = DipToCurrent(80)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "Klinička bolnica Merkur"
+				Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "kbm.png")
+				imgBolnicaLogo.Left = DipToCurrent(80)
+				imgBolnicaLogo.Width = DipToCurrent(80)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Bitmap = bmp
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "Psihijatrijska bolnica Jankomir"
+				Dim bmp As Bitmap = LoadBitmap(File.DirAssets, "pbsvi-logo.png")
+				imgBolnicaLogo.Left = DipToCurrent(80)
+				imgBolnicaLogo.Width = DipToCurrent(80)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Bitmap = bmp
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "Opća bolnica Sveti Duh"
+				imgBolnicaLogo.Bitmap = LoadBitmap(File.DirAssets, "sd.jpg")
+				imgBolnicaLogo.Left = 0
+				imgBolnicaLogo.Width = DipToCurrent(240)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "Sveučilišna klinika Vuk Vrhovec"
+				imgBolnicaLogo.Bitmap = LoadBitmap(File.DirAssets, "vvlogosmall.jpg")
+				imgBolnicaLogo.Left = DipToCurrent(80)
+				imgBolnicaLogo.Width = DipToCurrent(80)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "DZ Zagreb - Centar", "DZ Zagreb - Istok", "DZ Zagreb - Zapad"
+				imgBolnicaLogo.Bitmap = LoadBitmap(File.DirAssets, "dz.png")
+				imgBolnicaLogo.Left = DipToCurrent(80)
+				imgBolnicaLogo.Width = DipToCurrent(80)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Gravity = Gravity.FILL
+				
+			Case "Podstanica Jarun", "Podstanica Centar", "Podstanica Gajnice", "Podstanica Dubrava", "Podstanica Sesvete", "Podstanica Novi Zagreb"
+				imgBolnicaLogo.Bitmap = LoadBitmap(File.DirAssets, "hp_plavi.png")
+				imgBolnicaLogo.Left = DipToCurrent(80)
+				imgBolnicaLogo.Width = DipToCurrent(80)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "MD Centar", "MD Dubrava", "MD Ksaver", "MD Maksimir", "MD Medveščak", "MD Park", "MD Peščenica", "MD Sveta Ana", "MD Sveti Josip", "MD Trešnjevka", "MD Trnje"
+				imgBolnicaLogo.Bitmap = LoadBitmap(File.DirAssets, "md.png")
+				imgBolnicaLogo.Left = DipToCurrent(80)
+				imgBolnicaLogo.Width = DipToCurrent(80)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Gravity = Gravity.FILL
+
+			Case "Državna uprava za zaštitu i spašavanje"
+				imgBolnicaLogo.Bitmap = LoadBitmap(File.DirAssets, "duzs2.png")
+				imgBolnicaLogo.Left = 0
+				imgBolnicaLogo.Width = DipToCurrent(240)
+				imgBolnicaLogo.Height = DipToCurrent(80)
+				imgBolnicaLogo.Gravity = Gravity.FILL
+				
+			Case Else ""
+				imgBolnicaLogo.Bitmap = LoadBitmap(File.DirAssets, "slika.png")
+
+		End Select
+
+'		ma = Marker1
+
+		PosaljiUpit
+
+		Return InfoWindowPanel
+	Else
+		Return Null
+	End If
+End Sub
+
+Sub OnInfoWindowClickListener1_Click(Marker1 As Marker)
+	Log("OnInfoWindowClickListener1_Click")
+
+	Activity.LoadLayout("odabir")
+	pnlOdabir.SetLayout((Activity.Width - pnlOdabir.Width) / 2, (Activity.Height - pnlOdabir.Height) / 2, pnlOdabir.Width, pnlOdabir.Height)
+End Sub
+
+Sub ImageView_Click
+	Dim iv As ImageView = Sender
+	Dim cursor1 As Cursor
+	Dim br_tel, email As String
+
+	cursor1 = Starter.upit.ExecQuery("SELECT tel, email, NazivBolnice FROM " & Starter.DBTableName3 & " WHERE NazivBolnice = '" & bol & "'")
+	For i = 0 To cursor1.RowCount - 1
+		cursor1.Position = i
+		br_tel = cursor1.GetString("tel")
+		email = cursor1.GetString("email")
+	Next
+
+	Select iv.Tag
+		Case 1
+			' početna stranica
+			Log("1")
+			Dim odg As Int = Msgbox2("Stvarno otvoriti početnu stranicu?", "Upit", "Da", "", "Ne", LoadBitmapSample(File.DirAssets, "upitnik.png", 32dip, 32dip))
+			If odg = DialogResponse.POSITIVE Then
+				OtvoriStranicu(bol)
+				pnlOdabir.RemoveAllViews
+				pnlOdabir.RemoveView
+			End If
+
+		Case 2
+			' foun
+			Log("2")
+			Dim odg As Int = Msgbox2("Stvarno pozvati?", "Upit", "Da", "", "Ne", LoadBitmapSample(File.DirAssets, "upitnik.png", 32dip, 32dip))
+			If odg = DialogResponse.POSITIVE Then
+				Dim p As PhoneCalls
+				StartActivity(p.Call(br_tel))
+				pnlOdabir.RemoveAllViews
+				pnlOdabir.RemoveView
+			End If
+
+		Case 3
+			' email
+			Log("3")
+			If email.Contains("n/a") = False Then
+				Dim odg As Int = Msgbox2("Stvarno poslati e-mail?", "Upit", "Da", "", "Ne", LoadBitmapSample(File.DirAssets, "upitnik.png", 32dip, 32dip))
+				If odg = DialogResponse.POSITIVE Then
+					Dim intent1 As Intent
+					intent1.Initialize(intent1.ACTION_VIEW, "mailto:" & email)
+					StartActivity(intent1)
+					pnlOdabir.RemoveAllViews
+					pnlOdabir.RemoveView
+				End If
+			End If
+
+		Case Else
+			Msgbox("Nema adrese elektroničke pošte!", "Informacija")
+
+	End Select
+End Sub
+
+Sub OtvoriStranicu(b As String)
+	Dim p As PhoneIntents
+
+	If b.Contains("Sestre Milosrdnice") = True Then
+		StartActivity(p.OpenBrowser("http://www.kbcsm.hr"))
+	Else If b.Contains("Sveti Duh") = True Then
+		StartActivity(p.OpenBrowser("http://www.kbsd.hr"))
+	Else If b.Contains("Klaićeva") = True Then
+		StartActivity(p.OpenBrowser("http://www.kdb.hr"))
+	Else If b.Contains("Vuk Vrhovac") = True Then
+		StartActivity(p.OpenBrowser("http://www.idb.hr"))
+	Else If b.Contains("Jordanovac") = True Then
+		StartActivity(p.OpenBrowser("http://www.kbc-zagreb.hr/klinike_i_zavodi/jord."))
+	Else If b.Contains("Vrapče") = True Then
+		StartActivity(p.OpenBrowser("http://www.bolnica-vrapce.hr"))
+	Else If b.Contains("Rebro") = True Then
+		StartActivity(p.OpenBrowser("http://www.kbc-zagreb.hr/"))
+	Else If b.Contains("Petrova") = True Then
+		StartActivity(p.OpenBrowser("http://www.kbc-zagreb.hr/klinike_i_zavodi/klinika_za_zenske_bolesti_i_porode"))
+	Else If b.Contains("Dubrava") = True Then
+		StartActivity(p.OpenBrowser("http://www.kbd.hr/"))
+	Else If b.Contains("Šalata") = True Then
+		StartActivity(p.OpenBrowser("http://www.kbc-zagreb.hr/klinike_i_zavodi/salata"))
+	Else If b.Contains("Merkur") = True Then
+		StartActivity(p.OpenBrowser("http://www.kb-merkur.hr/"))
+	Else If b.Contains("Jankomir") = True Then
+		StartActivity(p.OpenBrowser("http://pbsvi.hr/"))
+	End If
+End Sub
+
+'We capture the menu and back keys
+Sub Activity_KeyPress (KeyCode As Int) As Boolean
+	' odabir za bolnicu (pozvati, ...)
+	If pnlOdabir.IsInitialized Then
+		If KeyCode = KeyCodes.KEYCODE_BACK And pnlOdabir.Visible Then
+			pnlOdabir.Visible = False
+			pnlOdabir.RemoveAllViews
+			pnlOdabir.RemoveView
+			Return True
+		End If
+	End If
+
+	' općine
+'	If Panel2.IsInitialized Then
+'		If KeyCode = KeyCodes.KEYCODE_BACK And Panel2.Visible Then
+'			Panel2.Visible = False
+'			Panel2.RemoveAllViews
+'			Panel2.RemoveView
+'			otvoren = False
+'			Return True
+'		End If
+'	End If
+
+	' općine
+'	If Panel3.IsInitialized Then
+'		If KeyCode = KeyCodes.KEYCODE_BACK And Panel3.Visible Then
+'			Panel3.Visible = False
+'			Panel3.RemoveAllViews
+'			Panel3.RemoveView
+'			otvoren2 = False
+'			Return True
+'		End If
+'	End If
+
+	' odjeli
+'	If Panel1.IsInitialized Then
+'		If KeyCode = KeyCodes.KEYCODE_BACK And Panel1.Visible Then
+'			Panel1.Visible = False
+'			Panel1.RemoveAllViews
+'			Panel1.RemoveView
+'			otvoren3 = False
+'			Return True
+'		End If
+'	End If
+
+	Return False
+End Sub
+
+Sub FusedLocationProvider1_ConnectionFailed(ConnectionResult1 As Int)
+	Log("FusedLocationProvider1_ConnectionFailed")
+	
+	'	the FusedLocationProvider ConnectionResult object contains the various CoonectionResult constants
+	
+	Select ConnectionResult1
+		Case FusedLocationProvider1.ConnectionResult.NETWORK_ERROR
+			'	a network error has occurred, this is likely to be a recoverable error
+			'	so try to connect again
+			FusedLocationProvider1.Connect
+		Case Else
+			'	TODO handle other errors
+	End Select
+End Sub
+
+Sub FusedLocationProvider1_ConnectionSuccess
+	Log("FusedLocationProvider1_ConnectionSuccess")
+	Dim LocationRequest1 As LocationRequest
+	LocationRequest1.Initialize
+	LocationRequest1.SetInterval(1000)	'	1000 milliseconds
+	LocationRequest1.SetPriority(LocationRequest1.Priority.PRIORITY_HIGH_ACCURACY)
+	LocationRequest1.SetSmallestDisplacement(1)	'	1 meter
+	
+	Dim LocationSettingsRequestBuilder1 As LocationSettingsRequestBuilder
+	LocationSettingsRequestBuilder1.Initialize
+	LocationSettingsRequestBuilder1.AddLocationRequest(LocationRequest1)
+	FusedLocationProvider1.CheckLocationSettings(LocationSettingsRequestBuilder1.Build)
+	
+	FusedLocationProvider1.RequestLocationUpdates(LocationRequest1)
+End Sub
+
+Sub FusedLocationProvider1_ConnectionSuspended(SuspendedCause1 As Int)
+	Log("FusedLocationProvider1_ConnectionSuspended")
+	
+	'	the FusedLocationProvider SuspendedCause object contains the various SuspendedCause constants
+	
+	Select SuspendedCause1
+		Case FusedLocationProvider1.SuspendedCause.CAUSE_NETWORK_LOST
+			'	TODO take action
+		Case FusedLocationProvider1.SuspendedCause.CAUSE_SERVICE_DISCONNECTED
+			'	TODO take action
+	End Select
+End Sub
+
+Sub FusedLocationProvider1_LocationChanged(Location1 As Location)
+	Dim cp As CameraPosition
+
+	Log("FusedLocationProvider1_LocationChanged")
+	LastLocation=Location1
+
+	Log(LastLocation.Latitude & ";" & LastLocation.Longitude)
+	If mVasaPoz.IsInitialized Then
+		mVasaPoz.Remove
+		Log(mVasaPoz.Position)
+	End If
+	mVasaPoz = gmap.AddMarker(LastLocation.Latitude, LastLocation.Longitude, "Vaša lokacija")
+'	markeri.Put(0, mVasaPoz)
+	If zum < 10 Then
+		zum = 10
+	Else
+		zum = gmap.CameraPosition.Zoom
+	End If
+
+	cp.Initialize(LastLocation.Latitude, LastLocation.Longitude, zum)
+	gmap.AnimateCamera(cp)
+End Sub
+
+Sub FusedLocationProvider1_LocationSettingsChecked(LocationSettingsResult1 As LocationSettingsResult)
+	Log("FusedLocationProvider1_LocationSettingsChecked")
+	Dim LocationSettingsStatus1 As LocationSettingsStatus=LocationSettingsResult1.GetLocationSettingsStatus
+	Select LocationSettingsStatus1.GetStatusCode
+		Case LocationSettingsStatus1.StatusCodes.RESOLUTION_REQUIRED
+			Log("RESOLUTION_REQUIRED")
+			'	device settings do not meet the location request requirements
+			'	a resolution dialog is available to enable the user to change the settings
+			LocationSettingsStatus1.StartResolutionDialog("LocationSettingsResult1")
+		Case LocationSettingsStatus1.StatusCodes.SETTINGS_CHANGE_UNAVAILABLE
+			Log("SETTINGS_CHANGE_UNAVAILABLE")
+			'	device settings do not meet the location request requirements
+			'	a resolution dialog is not available to enable the user to change the settings
+			Msgbox("Unable to listen for location updates, device does not meet the requirements.", "Problem")
+			Activity.Finish
+		Case LocationSettingsStatus1.StatusCodes.SUCCESS
+			Log("SUCCESS")
+			'	device settings meet the location request requirements
+			'	no further action required
+	End Select
+End Sub
+
+Sub LocationSettingsResult1_ResolutionDialogDismissed(LocationSettingsUpdated As Boolean)
+	Log("LocationSettingsResult1_ResolutionDialogDismissed")
+	If Not(LocationSettingsUpdated) Then
+		' the user failed to update the device settings to meet the location request requirements
+		Msgbox("Unable to listen for location updates, you failed to enable the required device settings.", "Problem")
+		Activity.Finish
+	End If
+End Sub
+
+'Sub fabUdaljenost_OnClick(obj As Object)
+'	Dim res As Int = Msgbox2("Stvarno poslati upit (potrošnja podataka?)?", "Upit", "Da", "", "Ne", LoadBitmapSample(File.DirAssets, "upitnik.png", 32dip, 32dip))
+'	If res = DialogResponse.POSITIVE Then
+'		If InfoWindowPanel.IsInitialized Then PosaljiUpit
+'	End If
+'End Sub
+
+Sub fabTeren_OnClick(obj As Object)
+	lblGumbOpcina.Visible = False
+'	If otvoren2 Then
+'		Panel3.RemoveAllViews
+'		Panel3.RemoveView
+'		otvoren2 = False
+'	Else	
+		DodajVrsteTerena2
+'		otvoren2 = True
+'	End If
+End Sub
+
+Sub fab_onClick(obj As Object)
+	Log(plList.Size)
+
+	If obj Is FloatingActionButton Then
+		Dim btn As FloatingActionButton = obj
+		Select btn.Tag
+			Case 1	' općine
+				If plList.Size > 0 Then
+					IzbrisiRutu
+				End If
+				lblGumbOpcina.Visible = True
+				lblGumbOpcina.Text = ""
+'				If otvoren Then
+'					Panel2.RemoveAllViews
+'					Panel2.RemoveView
+'					otvoren = False
+'				Else	
+					OtvoriOpcine2
+'					otvoren = True
+'				End If
+				zadnjiMeniGumb = 1
+
+			Case 2	' odjeli
+				If plList.Size > 0 Then
+					IzbrisiRutu
+				End If
+				lblGumbOpcina.Visible = True
+				lblGumbOpcina.Text = ""
+'				If otvoren3 Then
+'					Panel1.RemoveAllViews
+'					Panel1.RemoveView
+'					otvoren3 = False
+'				Else	
+					OtvoriOdjele2
+'					otvoren3 = True
+'				End If
+				zadnjiMeniGumb = 2
+
+			Case 3	' dz
+				If plList.Size > 0 Then
+					IzbrisiRutu
+				End If
+				lblGumbOpcina.Visible = True
+				lblGumbOpcina.Text = ""
+'				If otvoren5 Then
+'					Panel5.RemoveAllViews
+'					Panel5.RemoveView
+'					otvoren5 = False
+'				Else
+					OtvoriDZ2
+'					otvoren5 = True
+'				End If
+				zadnjiMeniGumb = 4
+
+			Case 4	' hp
+				If plList.Size > 0 Then
+					IzbrisiRutu
+				End If
+				lblGumbOpcina.Visible = False
+				lblGumbOpcina.Text = ""
+				OtvoriHP
+				zadnjiMeniGumb = 5
+
+			Case 5	' bolnice
+				If plList.Size > 0 Then
+					IzbrisiRutu
+				End If
+				lblGumbOpcina.Visible = False
+				lblGumbOpcina.Text = ""
+				OtvoriBolnice
+				zadnjiMeniGumb = 3
+
+			Case 6	' mirovni domovi
+				If plList.Size > 0 Then
+					IzbrisiRutu
+				End If
+				lblGumbOpcina.Visible = False
+				lblGumbOpcina.Text = ""
+				OtvoriMirovneDomove
+				zadnjiMeniGumb = 6
+
+			Case 7
+				If plList.Size > 0 Then
+					IzbrisiRutu
+				End If
+				lblGumbOpcina.Visible = False
+				lblGumbOpcina.Text = ""
+				OtvoriDUZS
+				zadnjiMeniGumb = 7
+		End Select
+
+		Log($"fab_onClick(${btn.LabelText})"$)
+		Log(btn.Tag)
+	End If
+
+	If obj Is Label Then
+		Dim lbl As Label = obj
+		Select lbl.text
+			Case "Općine"
+				lblGumbOpcina.Visible = True
+				lblGumbOpcina.Text = ""
+'				If otvoren Then
+'					Panel2.RemoveAllViews
+'					Panel2.RemoveView
+'					otvoren = False
+'				Else	
+					OtvoriOpcine2
+'					otvoren = True
+'				End If
+				zadnjiMeniGumb = 1
+
+			Case "Odjeli"
+				lblGumbOpcina.Visible = True
+				lblGumbOpcina.Text = ""
+'				If otvoren3 Then
+'					Panel1.RemoveAllViews
+'					Panel1.RemoveView
+'					otvoren3 = False
+'				Else	
+					OtvoriOdjele2
+'					otvoren3 = True
+'				End If
+				zadnjiMeniGumb = 2
+
+			Case "Domovi zdravlja"
+				lblGumbOpcina.Visible = True
+				lblGumbOpcina.Text = ""
+'				If otvoren5 Then
+'					Panel5.RemoveAllViews
+'					Panel5.RemoveView
+'					otvoren5 = False
+'				Else	
+					OtvoriDZ2
+'					otvoren5 = True
+'				End If
+				zadnjiMeniGumb = 4
+
+			Case "Podstanice hitne pomoći"
+				lblGumbOpcina.Visible = False
+				lblGumbOpcina.Text = ""
+				OtvoriHP
+				zadnjiMeniGumb = 5
+
+			Case "Bolnice"
+				lblGumbOpcina.Visible = False
+				lblGumbOpcina.Text = ""
+				OtvoriBolnice
+				zadnjiMeniGumb = 3
+
+			Case "Mirovni domovi"
+				lblGumbOpcina.Visible = False
+				lblGumbOpcina.Text = ""
+				OtvoriMirovneDomove
+				zadnjiMeniGumb = 6
+
+			Case "112"
+				lblGumbOpcina.Visible = False
+				lblGumbOpcina.Text = ""
+				OtvoriDUZS
+				zadnjiMeniGumb = 7
+		End Select
+
+		Log($"fab_onClick(Label: ${lbl.Text})"$)
+	End If
+End Sub
+
+Sub fam_onMenuToggle(opened As Boolean)
+	Log($"fam_onMenuToggle(${opened})"$)
+	startAppInterstitial.showAd
+End Sub
+
+Sub fam_onClick(obj As Object)
+	'Dim menu As FloatingActionMenu = Sender
+	
+	Dim btn As FloatingActionButton = obj
+	Log($"fam_onClick(${btn})"$)
+	fam.toggle(True)
+End Sub
+
+Sub imgUdaljenost_Click
+	If panelVidljiv Then
+		lblUdaljenost.Text = udaljenost1 & " - " & udaljenost2
+		Panel1.SetLayoutAnimated(2000, -(100%x - 6%x - imgUdaljenost.Width), 100%y - 22%y, 100%x - 6%x - imgUdaljenost.Width, 13%x)
+		panelVidljiv = False
+	Else
+		lblUdaljenost.Text = udaljenost1 & " - " & udaljenost2
+		Panel1.SetLayoutAnimated(2000, imgUdaljenost.Left + imgUdaljenost.Width + 1%x, 100%y - 22%y, 100%x - 7%x - imgUdaljenost.Width, 13%x)
+		panelVidljiv = True
+	End If
+End Sub

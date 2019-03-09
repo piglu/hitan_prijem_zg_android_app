@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.stanks.hp_zgb"
+	android:versionCode="6"
+	android:versionName="1.4"
+	android:installLocation="internalOnly">
+	
+	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+	<supports-screens android:largeScreens="true" 
+	    android:normalScreens="true" 
+	    android:smallScreens="true" 
+	    android:anyDensity="true"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="com.stanks.hp_zgb.permission.MAPS_RECEIVE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<application
+		android:icon="@drawable/icon"
+		android:label="Hitan prijem - Zagreb">
+		
+		<meta-data
+		  android:name="com.google.android.geo.API_KEY"
+		  android:value="AIzaSyCCq0Sa8x2Gt1csEVopRQ2xxmjioqaPtgo "/>
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
+		<activity android:name="com.startapp.android.publish.list3d.List3DActivity"
+		          android:theme="@android:style/Theme" />
+		
+		<activity android:name="com.startapp.android.publish.OverlayActivity"
+		          android:theme="@android:style/Theme.Translucent"
+		          android:configChanges="orientation|keyboardHidden|screenSize" />
+		
+		<activity android:name="com.startapp.android.publish.FullScreenActivity"
+		          android:theme="@android:style/Theme"
+		          android:configChanges="orientation|keyboardHidden|screenSize" />
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".main"
+			android:label="Hitan prijem - Zagreb"
+			android:screenOrientation="unspecified">
+			<intent-filter>
+			   <action android:name="android.intent.action.MAIN" />
+			   <category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			
+		</activity>
+		<service android:name=".starter">
+		</service>
+		<receiver android:name=".starter$starter_BR">
+		</receiver>
+		<service android:name="anywheresoftware.b4a.samples.httputils2.httputils2service">
+		</service>
+		<receiver android:name="anywheresoftware.b4a.samples.httputils2.httputils2service$httputils2service_BR">
+		</receiver>
+	</application>
+</manifest>
